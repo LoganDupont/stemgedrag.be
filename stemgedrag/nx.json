@@ -45,27 +45,27 @@
   "generators": {
     "@nrwl/angular:application": {
       "style": "scss",
+      "linter": "eslint",
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress",
       "skipTests": true,
       "prefix": "sg",
       "standalone": true,
-      "routing": true,
-      "linter": "eslint",
-      "unitTestRunner": "jest",
-      "e2eTestRunner": "cypress"
+      "routing": true
     },
     "@nrwl/angular:library": {
       "linter": "eslint",
+      "unitTestRunner": "jest",
       "style": "scss",
       "prefix": "sg",
       "skipModule": true,
       "skipTests": true,
-      "standalone": true,
-      "unitTestRunner": "jest"
+      "standalone": true
     },
     "@nrwl/angular:component": {
+      "style": "scss",
       "skipTests": true,
-      "standalone": true,
-      "style": "scss"
+      "standalone": true
     },
     "@nrwl/angular:service": {
       "skipTests": true
