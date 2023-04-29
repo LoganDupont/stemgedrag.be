@@ -15,8 +15,41 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@stemgedrag/stemgedrag/data-access-commune": [
+        "libs/stemgedrag/data-access-commune/src/index.ts"
+      ],
+      "@stemgedrag/stemgedrag/data-access-europe": [
+        "libs/stemgedrag/data-access-europe/src/index.ts"
+      ],
+      "@stemgedrag/stemgedrag/data-access-federal": [
+        "libs/stemgedrag/data-access-federal/src/index.ts"
+      ],
+      "@stemgedrag/stemgedrag/data-access-flemish": [
+        "libs/stemgedrag/data-access-flemish/src/index.ts"
+      ],
+      "@stemgedrag/stemgedrag/data-access-province": [
+        "libs/stemgedrag/data-access-province/src/index.ts"
+      ],
+      "@stemgedrag/stemgedrag/feat-commune": [
+        "libs/stemgedrag/feat-commune/src/index.ts"
+      ],
+      "@stemgedrag/stemgedrag/feat-europe": [
+        "libs/stemgedrag/feat-europe/src/index.ts"
+      ],
+      "@stemgedrag/stemgedrag/feat-federal": [
+        "libs/stemgedrag/feat-federal/src/index.ts"
+      ],
+      "@stemgedrag/stemgedrag/feat-flemish": [
+        "libs/stemgedrag/feat-flemish/src/index.ts"
+      ],
+      "@stemgedrag/stemgedrag/feat-province": [
+        "libs/stemgedrag/feat-province/src/index.ts"
+      ],
       "@stemgedrag/stemgedrag/feat-shell": [
         "libs/stemgedrag/feat-shell/src/index.ts"
+      ],
+      "@stemgedrag/stemgedrag/type-mep": [
+        "libs/stemgedrag/type-mep/src/index.ts"
       ]
     }
   },

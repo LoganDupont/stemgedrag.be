@@ -1,0 +1,9 @@
+{
+  "/api": {
+    "target": "https://data.europarl.europa.eu/api/v1",
+    "secure": false,
+    "headers": {
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+}
