@@ -1,1 +1,1 @@
-export * from './lib/stemgedrag-type-mep/stemgedrag-type-mep.component';
+export * from './lib/types/mep.type';
