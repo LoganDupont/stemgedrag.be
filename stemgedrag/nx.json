@@ -64,6 +64,7 @@
     },
     "@nrwl/angular:component": {
       "style": "scss",
+      "prefix": "sg",
       "skipTests": true,
       "standalone": true
     },

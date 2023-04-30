@@ -1,4 +1,4 @@
-export type Category = Readonly<{
+export type Mep = Readonly<{
   id: string;
   type: string;
   identifier: string;

@@ -1,0 +1,5 @@
+<ng-container *ngFor="let mep of belgianMEPs$ | async">
+  <div>
+    <a [routerLink]="mep.identifier">{{mep.label}}</a>
+  </div>
+</ng-container>
