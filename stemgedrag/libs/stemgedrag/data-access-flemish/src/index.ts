@@ -1,1 +1,1 @@
-export * from './lib/stemgedrag-data-access-flemish/stemgedrag-data-access-flemish.component';
+export * from './lib/services/volks-vertegenwoordiger.service';

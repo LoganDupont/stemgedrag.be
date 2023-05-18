@@ -50,6 +50,9 @@
       ],
       "@stemgedrag/stemgedrag/type-mep": [
         "libs/stemgedrag/type-mep/src/index.ts"
+      ],
+      "@stemgedrag/stemgedrag/type-volks-vertegenwoordiger": [
+        "libs/stemgedrag/type-volks-vertegenwoordiger/src/index.ts"
       ]
     }
   },

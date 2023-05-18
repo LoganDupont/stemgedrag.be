@@ -5,5 +5,13 @@
     "headers": {
       "accept": "application/ld+json"
     }
+  },
+
+  "/e/opendata": {
+    "target": "http://ws.vlpar.be",
+    "secure": false,
+    "headers": {
+      "accept": "application/json;charset=UTF-8"
+    }
   }
 }
