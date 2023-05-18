@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">
+  <button mat-flat-button color="primary">Home</button>
+  <button mat-flat-button color="primary">Gemeente</button>
+  <button mat-flat-button color="primary">Provincie</button>
+  <button mat-flat-button color="primary" routerLink="flemish">
+    Vlaanderen
+  </button>
+  <button mat-flat-button color="primary">Federaal</button>
+  <button mat-flat-button color="primary" routerLink="europe">Europa</button>
+</mat-toolbar>
+<div class="shell__content">
+  <router-outlet></router-outlet>
+</div>

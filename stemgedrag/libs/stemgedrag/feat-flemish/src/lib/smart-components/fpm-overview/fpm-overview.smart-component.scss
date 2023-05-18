@@ -1,0 +1,16 @@
+@use '@angular/material' as mat;
+
+.container {
+  flex-flow: row wrap;
+  display: flex;
+  align-content: flex-start;
+  gap: 16px;
+}
+
+.item {
+  flex: 1 1 25%;
+  &:hover{
+    cursor: pointer;
+    @include mat.elevation(8);
+  }
+}
