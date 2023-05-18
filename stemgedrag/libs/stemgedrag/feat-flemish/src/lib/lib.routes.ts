@@ -1,6 +1,8 @@
 import { Route } from '@angular/router';
-import { StemgedragFeatFlemishComponent } from './stemgedrag-feat-flemish/stemgedrag-feat-flemish.component';
+import { FpmOverviewSmartComponent } from './smart-components/fpm-overview/fpm-overview.smart-component';
+import { FpmDetailSmartComponent } from './smart-components/fpm-detail/fpm-detail.smart-component';
 
 export const stemgedragFeatFlemishRoutes: Route[] = [
-  { path: '', component: StemgedragFeatFlemishComponent },
+  { path: '', component: FpmOverviewSmartComponent },
+  { path: ':id', component: FpmDetailSmartComponent },
 ];

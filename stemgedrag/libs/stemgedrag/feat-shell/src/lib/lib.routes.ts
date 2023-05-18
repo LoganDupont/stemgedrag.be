@@ -13,6 +13,13 @@ export const stemgedragFeatShellRoutes: Route[] = [
             (mod) => mod.stemgedragFeatEuropeRoutes
           ),
       },
+      {
+        path: 'flemish',
+        loadChildren: () =>
+          import('@stemgedrag/stemgedrag/feat-flemish').then(
+            (mod) => mod.stemgedragFeatFlemishRoutes
+          ),
+      },
     ],
   },
 ];
