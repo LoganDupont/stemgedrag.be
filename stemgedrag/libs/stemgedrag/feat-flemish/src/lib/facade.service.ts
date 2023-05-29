@@ -21,6 +21,6 @@ export class FacadeService {
   }
 
   public getVotesByFlemishParliamentMember(): Observable<any> {
-    return this.volksVertegenwoordigerService.getActiveFlemishParliamentMembers();
+    return this.volksVertegenwoordigerService.getVotesByFlemishParliamentMember();
   }
 }
