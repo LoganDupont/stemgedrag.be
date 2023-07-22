@@ -12,6 +12,7 @@
     "secure": false,
     "headers": {
       "accept": "application/json;charset=UTF-8"
-    }
+    },
+    "logLevel": "debug"
   }
 }

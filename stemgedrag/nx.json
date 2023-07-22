@@ -38,12 +38,13 @@
       "!{projectRoot}/**/?(*.)+(spec|test).[jt]s?(x)?(.snap)",
       "!{projectRoot}/tsconfig.spec.json",
       "!{projectRoot}/jest.config.[jt]s",
-      "!{projectRoot}/.eslintrc.json"
+      "!{projectRoot}/.eslintrc.json",
+      "!{projectRoot}/src/test-setup.[jt]s"
     ],
     "sharedGlobals": []
   },
   "generators": {
-    "@nrwl/angular:application": {
+    "@nx/angular:application": {
       "style": "scss",
       "linter": "eslint",
       "unitTestRunner": "jest",
@@ -53,7 +54,7 @@
       "standalone": true,
       "routing": true
     },
-    "@nrwl/angular:library": {
+    "@nx/angular:library": {
       "linter": "eslint",
       "unitTestRunner": "jest",
       "style": "scss",
@@ -62,13 +63,13 @@
       "skipTests": true,
       "standalone": true
     },
-    "@nrwl/angular:component": {
+    "@nx/angular:component": {
       "style": "scss",
       "prefix": "sg",
       "skipTests": true,
       "standalone": true
     },
-    "@nrwl/angular:service": {
+    "@nx/angular:service": {
       "skipTests": true
     }
   }
