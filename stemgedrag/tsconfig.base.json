@@ -42,6 +42,9 @@
       "@stemgedrag/stemgedrag/feat-flemish": [
         "libs/stemgedrag/feat-flemish/src/index.ts"
       ],
+      "@stemgedrag/stemgedrag/feat-home": [
+        "libs/stemgedrag/feat-home/src/index.ts"
+      ],
       "@stemgedrag/stemgedrag/feat-province": [
         "libs/stemgedrag/feat-province/src/index.ts"
       ],

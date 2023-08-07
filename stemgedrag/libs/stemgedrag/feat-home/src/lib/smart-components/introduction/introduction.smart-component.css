@@ -1,0 +1,30 @@
+.share-container {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.facebook {
+  color: #fff;
+  background-color: #1877f2;
+}
+
+.twitter {
+  color: #fff;
+  background-color: #1da1f2;
+}
+
+.linkedin {
+  color: #fff;
+  background-color: #0a66c2;
+}
+
+.mastodon {
+  color: #fff;
+  background-color: #6364ff;
+}
+
+.copy-link {
+  color: #fff;
+  background-color: #333;
+}
