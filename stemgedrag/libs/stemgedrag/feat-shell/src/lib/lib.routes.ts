@@ -21,6 +21,13 @@ export const stemgedragFeatShellRoutes: Route[] = [
           ),
       },
       {
+        path: 'federal',
+        loadChildren: () =>
+          import('@stemgedrag/stemgedrag/feat-federal').then(
+            (mod) => mod.stemgedragFeatFederalRoutes
+          ),
+      },
+      {
         path: 'flemish',
         loadChildren: () =>
           import('@stemgedrag/stemgedrag/feat-flemish').then(
