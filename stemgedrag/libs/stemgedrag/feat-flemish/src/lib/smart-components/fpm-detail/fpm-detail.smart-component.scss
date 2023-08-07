@@ -1,0 +1,89 @@
+@use '@angular/material' as mat;
+
+:host{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card-member-vote {
+  display: flex;
+  flex-direction: row;
+
+  &:hover{
+    cursor: pointer;
+    @include mat.elevation(8);
+  }
+
+  .vote-result {
+    background-color: rgba(248,246,252,.5);
+    border-right: 1px solid #cbc9cd;
+    min-width: 100px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+
+    .text {
+      font-size: 1.25rem;
+      font-weight: 500;
+      line-height: 1.35;
+    }
+  }
+
+  .vote-details {
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+
+    .content {
+      padding: 16px;
+      display: flex;
+      flex-direction: row;
+      flex: auto;
+      justify-content: space-between;
+      align-items: center;
+      gap: 64px;
+
+      .subject {
+        color: #373151;
+        font-size: 1.25rem;
+        font-weight: 500;
+        line-height: 1.35;
+      }
+
+      .results {
+        display: flex;
+        flex-direction: row;
+        gap: 64px;
+
+        .vote-option{
+          .label{
+            color: #717171;
+            font-size: 1rem;
+            line-height: 1.4;
+          }
+
+          .value {
+            color: #625a75;
+            font-size: 1.66rem;
+            font-weight: 500;
+            line-height: 1.2;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}

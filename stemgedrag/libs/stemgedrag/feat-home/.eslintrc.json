@@ -1,5 +1,5 @@
 {
-  "extends": ["../../.eslintrc.json"],
+  "extends": ["../../../.eslintrc.json"],
   "ignorePatterns": ["!**/*"],
   "overrides": [
     {
@@ -9,7 +9,7 @@
           "error",
           {
             "type": "attribute",
-            "prefix": "sg",
+            "prefix": "stemgedrag",
             "style": "camelCase"
           }
         ],
@@ -17,7 +17,7 @@
           "error",
           {
             "type": "element",
-            "prefix": "sg",
+            "prefix": "stemgedrag",
             "style": "kebab-case"
           }
         ]

@@ -4,7 +4,8 @@
     "secure": false,
     "headers": {
       "accept": "application/ld+json"
-    }
+    },
+    "changeOrigin": true
   },
 
   "/e/opendata": {
@@ -12,6 +13,7 @@
     "secure": false,
     "headers": {
       "accept": "application/json;charset=UTF-8"
-    }
+    },
+    "changeOrigin": true
   }
 }

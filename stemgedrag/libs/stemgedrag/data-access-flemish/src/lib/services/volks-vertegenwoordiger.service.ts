@@ -1,6 +1,6 @@
-import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { map, Observable, switchMap } from 'rxjs';
+import { inject, Injectable } from '@angular/core';
+import { forkJoin, map, Observable, switchMap } from 'rxjs';
 
 import { VolksVertegenwoordiger } from '@stemgedrag/stemgedrag/type-volks-vertegenwoordiger';
 
@@ -21,12 +21,37 @@ export class VolksVertegenwoordigerService {
 
   public getVotesByFlemishParliamentMember(): Observable<any> {
     return this.httpClient
-      .get<any>(`${this.apiUrl}/verg/vorige?type=plen`)
+      .get<any>(`${this.apiUrl}/verg/vorige?type=plen&dagen=31`)
       .pipe(
         switchMap((verg) =>
-          this.httpClient
-            .get<any>(`${verg.items[0].vergadering.link[1].href}`)
-            .pipe()
+          this.httpClient.get<any>(`${verg.items[0].vergadering.link[1].href}`)
+        ),
+        map((vergDetail) =>
+          vergDetail.vergadering['agenda-item']
+            .filter(
+              (agendaItem: any) =>
+                agendaItem['agenda-lijn'][0]['agenda-lijn-type']?.naam ===
+                'Hoofdelijke stemming'
+            )
+            .map(
+              (agendaItem: any) =>
+                agendaItem['agenda-lijn'][0]['parlementair-initiatief'][0]
+                  .link[0].href
+            )
+        ),
+        switchMap((urls: string[]) => {
+          const parlementairInitiatives = urls.map((url) =>
+            this.httpClient.get<any>(url)
+          );
+          return forkJoin(parlementairInitiatives);
+        }),
+        map((parlementairInitiatives) =>
+          parlementairInitiatives.map((parlementairInitiatives: any) => ({
+            title: parlementairInitiatives.titel,
+            filewebpath: parlementairInitiatives.filewebpath,
+            stemming:
+              parlementairInitiatives['journaallijn-stemmingen'].stemming[0],
+          }))
         )
       );
   }
