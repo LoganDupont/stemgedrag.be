@@ -1,5 +1,5 @@
-import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { inject, Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
 
 import { Mep } from '@stemgedrag/stemgedrag/type-mep';
@@ -7,7 +7,7 @@ import { Mep } from '@stemgedrag/stemgedrag/type-mep';
 @Injectable({ providedIn: 'root' })
 export class MemberEuropeanParlementService {
   private readonly httpClient = inject(HttpClient);
-  private apiUrl = '/api/v1';
+  private apiUrl = 'https://data.europarl.europa.eu/api/v1';
 
   public getActiveBelgianMEPs(): Observable<Mep[]> {
     return this.httpClient

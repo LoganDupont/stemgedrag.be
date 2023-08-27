@@ -1,5 +1,31 @@
-<ng-container *ngFor="let mep of belgianMEPs$ | async">
-  <div>
-    <a [routerLink]="mep.identifier">{{mep.label}}</a>
-  </div>
+<ng-container *ngIf="belgianMEPs$ | async as belgianMEPs; else showMessage">
+  <ng-container *ngFor="let mep of belgianMEPs">
+    <div>
+      <a [routerLink]="mep.identifier">{{mep.label}}</a>
+    </div>
+  </ng-container>
 </ng-container>
+
+<ng-template #showMessage>
+  <p>
+    Het Europeese Parlement laat momenteel niet toe dat andere domeinen hun api
+    aanspreken.
+  </p>
+  <a
+    href="https://data.europarl.europa.eu/nl/developer-corner/opendata-api"
+    rel="noopener noreferrer"
+    target="_blank"
+    >https://data.europarl.europa.eu/nl/developer-corner/opendata-api</a
+  >
+
+  <p>
+    Neem
+    <a
+      href="https://data.europarl.europa.eu/nl/contact?contactTheme=site.contact.theme.issue-report"
+      rel="noopener noreferrer"
+      target="_blank"
+      >contact</a
+    >
+    op en help mee om het probleem aan te kaarten.
+  </p>
+</ng-template>

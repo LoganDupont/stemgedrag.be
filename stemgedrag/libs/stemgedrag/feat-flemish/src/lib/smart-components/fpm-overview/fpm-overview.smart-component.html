@@ -1,28 +1,50 @@
-<div class="container">
-  <ng-container
-    *ngFor="
-    let activeFlemishParliamentMember of activeFlemishParliamentMembers$ | async
+<ng-container
+  *ngIf="activeFlemishParliamentMembers$ | async as activeFlemishParliamentMembers; else showMessage"
+>
+  <div class="container">
+    <ng-container
+      *ngFor="
+    let activeFlemishParliamentMember of activeFlemishParliamentMembers
   "
-  >
-    <mat-card
-      class="item"
-      [routerLink]="activeFlemishParliamentMember.volksvertegenwoordiger.id"
     >
-      <mat-card-header>
-        <img
-          mat-card-avatar
-          [ngSrc]="activeFlemishParliamentMember.volksvertegenwoordiger.fotowebpath"
-          width="40"
-          height="40"
-        />
-        <mat-card-title>
-          {{ activeFlemishParliamentMember.volksvertegenwoordiger.voornaam }} {{
-          activeFlemishParliamentMember.volksvertegenwoordiger.naam}}
-        </mat-card-title>
-        <mat-card-subtitle>
-          {{activeFlemishParliamentMember.volksvertegenwoordiger.fractie.naam}}
-        </mat-card-subtitle>
-      </mat-card-header>
-    </mat-card>
-  </ng-container>
-</div>
+      <mat-card
+        class="item"
+        [routerLink]="activeFlemishParliamentMember.volksvertegenwoordiger.id"
+      >
+        <mat-card-header>
+          <img
+            mat-card-avatar
+            [ngSrc]="activeFlemishParliamentMember.volksvertegenwoordiger.fotowebpath"
+            width="40"
+            height="40"
+          />
+          <mat-card-title>
+            {{ activeFlemishParliamentMember.volksvertegenwoordiger.voornaam }}
+            {{ activeFlemishParliamentMember.volksvertegenwoordiger.naam}}
+          </mat-card-title>
+          <mat-card-subtitle>
+            {{activeFlemishParliamentMember.volksvertegenwoordiger.fractie.naam}}
+          </mat-card-subtitle>
+        </mat-card-header>
+      </mat-card>
+    </ng-container>
+  </div>
+</ng-container>
+<ng-template #showMessage>
+  <p>
+    Het Vlaams Parlement laat momenteel niet toe dat andere domeinen hun api
+    aanspreken.
+  </p>
+  <a
+    href="https://ws.vlpar.be/e/opendata/api/"
+    rel="noopener noreferrer"
+    target="_blank"
+    >https://ws.vlpar.be/e/opendata/api/</a
+  >
+
+  <p>
+    Neem
+    <a href="mailto:info@vlaamsparlement.be">contact</a>
+    op en help mee om het probleem aan te kaarten.
+  </p>
+</ng-template>
