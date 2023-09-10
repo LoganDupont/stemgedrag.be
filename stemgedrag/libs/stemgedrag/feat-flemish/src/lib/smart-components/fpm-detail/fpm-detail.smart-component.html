@@ -1,40 +1,41 @@
 <!-- {{votes$ |async | json}} -->
-<ng-container
-  *ngFor="
-    let vote of votes$ | async
-  "
->
-  <!-- <div>{{vote | json}}</div> -->
+<ng-container *ngIf="votes$ | async as votes; else loading">
+  <ng-container *ngFor="let vote of votes">
+    <!-- <div>{{vote | json}}</div> -->
 
-  <mat-card class="card-member-vote">
-    <div class="vote-result">
-      <ng-container [ngSwitch]="vote.voted">
-        <mat-icon *ngSwitchCase="'voor'">thumb_up</mat-icon>
-        <mat-icon *ngSwitchCase="'tegen'">thumb_down</mat-icon>
-        <mat-icon *ngSwitchCase="'onthouding'">minimize</mat-icon>
-        <mat-icon *ngSwitchCase="'niet gestemd'">cancel</mat-icon>
-      </ng-container>
-      <div class="text">{{vote.voted}}</div>
-    </div>
-    <div class="vote-details">
-      <div class="content">
-        <div class="subject">{{vote.title}}</div>
-        <div class="results">
-          <div class="vote-option">
-            <div class="label">Voor</div>
-            <div class="value">{{vote.stemming['aantal-voor']}}</div>
-          </div>
-          <div class="vote-option">
-            <div class="label">Tegen</div>
-            <div class="value">{{vote.stemming['aantal-tegen']}}</div>
-          </div>
-          <div class="vote-option">
-            <div class="label">Onthouding</div>
-            <div class="value">{{vote.stemming['aantal-onthouding']}}</div>
+    <mat-card class="card-member-vote">
+      <div class="vote-result">
+        <ng-container [ngSwitch]="vote.voted">
+          <mat-icon *ngSwitchCase="'voor'">thumb_up</mat-icon>
+          <mat-icon *ngSwitchCase="'tegen'">thumb_down</mat-icon>
+          <mat-icon *ngSwitchCase="'onthouding'">minimize</mat-icon>
+          <mat-icon *ngSwitchCase="'niet gestemd'">cancel</mat-icon>
+        </ng-container>
+        <div class="text">{{vote.voted}}</div>
+      </div>
+      <div class="vote-details">
+        <div class="content">
+          <div class="subject">{{vote.title}}</div>
+          <div class="results">
+            <div class="vote-option">
+              <div class="label">Voor</div>
+              <div class="value">{{vote.stemming['aantal-voor']}}</div>
+            </div>
+            <div class="vote-option">
+              <div class="label">Tegen</div>
+              <div class="value">{{vote.stemming['aantal-tegen']}}</div>
+            </div>
+            <div class="vote-option">
+              <div class="label">Onthouding</div>
+              <div class="value">{{vote.stemming['aantal-onthouding']}}</div>
+            </div>
           </div>
         </div>
+        <div class="info"></div>
       </div>
-      <div class="info"></div>
-    </div>
-  </mat-card>
+    </mat-card>
+  </ng-container>
 </ng-container>
+<ng-template #loading>
+  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+</ng-template>

@@ -24,7 +24,7 @@ export class VolksVertegenwoordigerService {
 
   public getVotesByFlemishParliamentMember(): Observable<any> {
     return this.httpClient
-      .get<any>(`${this.apiUrl}/verg/vorige?type=plen&dagen=31`, {
+      .get<any>(`${this.apiUrl}/verg/vorige?type=plen&dagen=100`, {
         headers: this.headers,
       })
       .pipe(

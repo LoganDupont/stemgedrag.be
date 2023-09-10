@@ -1,5 +1,5 @@
 <ng-container
-  *ngIf="activeFlemishParliamentMembers$ | async as activeFlemishParliamentMembers; else showMessage"
+  *ngIf="activeFlemishParliamentMembers$ | async as activeFlemishParliamentMembers; else loading"
 >
   <div class="container">
     <ng-container
@@ -30,21 +30,6 @@
     </ng-container>
   </div>
 </ng-container>
-<ng-template #showMessage>
-  <p>
-    Het Vlaams Parlement laat momenteel niet toe dat andere domeinen hun api
-    aanspreken.
-  </p>
-  <a
-    href="https://ws.vlpar.be/e/opendata/api/"
-    rel="noopener noreferrer"
-    target="_blank"
-    >https://ws.vlpar.be/e/opendata/api/</a
-  >
-
-  <p>
-    Neem
-    <a href="mailto:info@vlaamsparlement.be">contact</a>
-    op en help mee om het probleem aan te kaarten.
-  </p>
+<ng-template #loading>
+  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
 </ng-template>
