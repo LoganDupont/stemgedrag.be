@@ -1,15 +1,21 @@
+import { CommonModule, NgOptimizedImage } from '@angular/common';
 import { Component, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterModule } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
-import { NgOptimizedImage } from '@angular/common';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { RouterModule } from '@angular/router';
 
 import { FacadeService } from '../../facade.service';
 
 @Component({
   selector: 'sg-fpm-overview',
   standalone: true,
-  imports: [CommonModule, RouterModule, MatCardModule, NgOptimizedImage],
+  imports: [
+    CommonModule,
+    RouterModule,
+    MatCardModule,
+    NgOptimizedImage,
+    MatProgressBarModule,
+  ],
   templateUrl: './fpm-overview.smart-component.html',
   styleUrls: ['./fpm-overview.smart-component.scss'],
 })
