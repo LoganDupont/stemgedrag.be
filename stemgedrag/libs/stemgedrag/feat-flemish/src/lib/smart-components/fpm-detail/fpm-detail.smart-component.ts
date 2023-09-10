@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { map } from 'rxjs';
 
@@ -10,7 +11,13 @@ import { FacadeService } from '../../facade.service';
 @Component({
   selector: 'sg-fpm-detail',
   standalone: true,
-  imports: [CommonModule, RouterModule, MatCardModule, MatIconModule],
+  imports: [
+    CommonModule,
+    RouterModule,
+    MatCardModule,
+    MatIconModule,
+    MatProgressBarModule,
+  ],
   templateUrl: './fpm-detail.smart-component.html',
   styleUrls: ['./fpm-detail.smart-component.scss'],
 })
