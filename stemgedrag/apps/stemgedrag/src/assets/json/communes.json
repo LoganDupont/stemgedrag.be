@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Herzele",
+    "link": "https://lblod.herzele.be/LBLODWeb/Home/Overzicht",
+    "postcode": 9550
+  },
+  {
+    "name": "Zottegem",
+    "link": "https://lblod.zottegem.be/LBLODWeb/Home/Overzicht/",
+    "postcode": 9620
+  },
+  {
+    "name": "Oosterzele",
+    "link": "https://lblod.oosterzele.be/LBLODWeb/Home/Overzicht",
+    "postcode": 9860
+  },
+  {
+    "name": "Geraardsbergen",
+    "link": "https://geraardsbergen-echo.cipalschaubroeck.be/raadpleegomgeving/",
+    "postcode": 9500
+  }
+]

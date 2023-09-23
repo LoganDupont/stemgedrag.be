@@ -1,0 +1,32 @@
+<div>
+  <p>
+    Lokale besturen zijn verplicht een groot aantal van hun beslissingen te
+    publiceren op hun website. Op deze manier kan je die beslissingen eenvoudig
+    kennen, raadplegen en eventueel klacht indienen.
+  </p>
+  <p>
+    Indien u het stemgedrag wenst te weten te komen kan u steeds de
+    <b>notulen</b>
+    raadplegen.
+  </p>
+  <p>
+    Wanneer uw gemeente niet in de lijst staat kan u steeds een aanvraag
+    indienen via
+    <a
+      href="https://github.com/LoganDupont/stemgedrag.be/issues/new"
+      rel="noopener noreferrer"
+      target="_blank"
+      >GitHub</a
+    >
+    of via <a href="mailto:contact@stemgedrag.be">contact@stemgedrag.be</a>.
+    Gelieve dan ook steeds de naam van de gemeente, postcode en de link waar de
+    bekendmakingen gepubliceerd worden te bezorgen.
+  </p>
+</div>
+<ng-container *ngFor="let commune of sortedCommunes$ | async">
+  <div>
+    <a [href]="commune.link" rel="noopener noreferrer" target="_blank"
+      >{{commune.name}}</a
+    >
+  </div>
+</ng-container>

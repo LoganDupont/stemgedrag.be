@@ -51,6 +51,9 @@
       "@stemgedrag/stemgedrag/feat-shell": [
         "libs/stemgedrag/feat-shell/src/index.ts"
       ],
+      "@stemgedrag/stemgedrag/type-commune": [
+        "libs/stemgedrag/type-commune/src/index.ts"
+      ],
       "@stemgedrag/stemgedrag/type-mep": [
         "libs/stemgedrag/type-mep/src/index.ts"
       ],
