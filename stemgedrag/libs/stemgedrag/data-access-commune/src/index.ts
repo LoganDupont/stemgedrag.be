@@ -1,1 +1,1 @@
-export * from './lib/stemgedrag-data-access-commune/stemgedrag-data-access-commune.component';
+export * from './lib/services/commune.service';
