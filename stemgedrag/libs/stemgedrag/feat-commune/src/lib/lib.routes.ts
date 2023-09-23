@@ -1,6 +1,9 @@
 import { Route } from '@angular/router';
-import { StemgedragFeatCommuneComponent } from './stemgedrag-feat-commune/stemgedrag-feat-commune.component';
+import { CommuneOverviewSmartComponent } from './smart-components/commune-overview/commune-overview.smart-component';
 
 export const stemgedragFeatCommuneRoutes: Route[] = [
-  { path: '', component: StemgedragFeatCommuneComponent },
+  {
+    path: '',
+    component: CommuneOverviewSmartComponent,
+  },
 ];

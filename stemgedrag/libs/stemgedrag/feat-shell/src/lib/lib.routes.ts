@@ -34,6 +34,13 @@ export const stemgedragFeatShellRoutes: Route[] = [
             (mod) => mod.stemgedragFeatFlemishRoutes
           ),
       },
+      {
+        path: 'commune',
+        loadChildren: () =>
+          import('@stemgedrag/stemgedrag/feat-commune').then(
+            (mod) => mod.stemgedragFeatCommuneRoutes
+          ),
+      },
     ],
   },
 ];
