@@ -57,6 +57,7 @@ export class VolksVertegenwoordigerService {
           parlementairInitiatives.map((parlementairInitiatives: any) => ({
             title: parlementairInitiatives.titel,
             filewebpath: parlementairInitiatives.filewebpath,
+            link: `https://www.vlaamsparlement.be/nl/parlementaire-documenten/parlementaire-initiatieven/${parlementairInitiatives.id}`,
             stemming:
               parlementairInitiatives['journaallijn-stemmingen'].stemming[0],
           }))
