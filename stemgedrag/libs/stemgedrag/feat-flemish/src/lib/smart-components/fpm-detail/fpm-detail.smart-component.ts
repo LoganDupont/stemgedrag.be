@@ -45,4 +45,8 @@ export class FpmDetailSmartComponent {
       }))
     )
   );
+
+  navigateToParliamentaryInitiativeDetailPage(vote: any) {
+    window.open(vote.link, '_blank', 'noreferrer');
+  }
 }
