@@ -18,5 +18,55 @@
     "name": "Geraardsbergen",
     "link": "https://geraardsbergen-echo.cipalschaubroeck.be/raadpleegomgeving/",
     "postcode": 9500
+  },
+  {
+    "name": "Brakel",
+    "link": "https://brakel-echo.cipalschaubroeck.be/raadpleegomgeving/",
+    "postcode": 9660
+  },
+  {
+    "name": "Sint-Lievens-Houtem",
+    "link": "https://lblod.sint-lievens-houtem.be/LBLODWeb/Home/Overzicht",
+    "postcode": 9520
+  },
+  {
+    "name": "Zwalm",
+    "link": "https://zwalm-echo.cipalschaubroeck.be/raadpleegomgeving/",
+    "postcode": 9630
+  },
+  {
+    "name": "Oudenaarde",
+    "link": "https://lblod.oudenaarde.be/LBLODWeb/Home/Overzicht",
+    "postcode": 9700
+  },
+  {
+    "name": "Gent",
+    "link": "https://ebesluitvorming.gent.be/",
+    "postcode": 9000
+  },
+  {
+    "name": "Kortrijk",
+    "link": "https://raadpleeg-kortrijk.onlinesmartcities.be/",
+    "postcode": 8500
+  },
+  {
+    "name": "Brugge",
+    "link": "https://besluitvorming.brugge.be/",
+    "postcode": 8000
+  },
+  {
+    "name": "Antwerpen",
+    "link": "https://ebesluit.antwerpen.be/",
+    "postcode": 2000
+  },
+  {
+    "name": "Hasselt",
+    "link": "https://ebesluit.hasselt.be/suite-consult/",
+    "postcode": 3500
+  },
+  {
+    "name": "Leuven",
+    "link": "https://besluitvorming.leuven.be/",
+    "postcode": 3000
   }
 ]
