@@ -68,5 +68,85 @@
     "name": "Leuven",
     "link": "https://besluitvorming.leuven.be/",
     "postcode": 3000
+  },
+  {
+    "name": "Kruisem",
+    "link": "https://kruisem-echo.cipalschaubroeck.be/raadpleegomgeving/",
+    "postcode": [9750, 9770]
+  },
+  {
+    "name": "Destelbergen",
+    "link": "https://www.destelbergen.be/bestuur/reglementen-besluiten",
+    "postcode": 9070
+  },
+  {
+    "name": "Ronse",
+    "link": "https://lblod.ronse.be/LBLODWeb/Home/Overzicht",
+    "postcode": 9600
+  },
+  {
+    "name": "Kluisbergen",
+    "link": "https://lblod.kluisbergen.be/LBLODWeb/Home/Overzicht",
+    "postcode": 9690
+  },
+  {
+    "name": "Wortegem-Petegem",
+    "link": "https://lblod.wortegem-petegem.be/LBLODWeb/Home/Overzicht",
+    "postcode": 9790
+  },
+  {
+    "name": "Horebeke",
+    "link": "https://lblod.horebeke.be/LBLODWeb/Home/Overzicht",
+    "postcode": 9667
+  },
+  {
+    "name": "Maarkedal",
+    "link": "https://lblod.maarkedal.be/LBLODWeb/Home/Overzicht",
+    "postcode": 9680
+  },
+  {
+    "name": "Lierde",
+    "link": "https://lblod.lierde.be/LBLODWeb/Home/Overzicht",
+    "postcode": 9570
+  },
+  {
+    "name": "Galmaarden",
+    "link": "https://galmaarden-echo.cipalschaubroeck.be/raadpleegomgeving/",
+    "postcode": 1570
+  },
+  {
+    "name": "Erpe-Mere",
+    "link": "https://lblod.erpe-mere.be/LBLODWeb/Home/Overzicht",
+    "postcode": 9420
+  },
+  {
+    "name": "Lede",
+    "link": "https://lblod.lede.be/LBLODWeb/Home/Overzicht",
+    "postcode": 9340
+  },
+  {
+    "name": "Wetteren",
+    "link": "https://lblod.wetteren.be/LBLODWeb/Home/Overzicht",
+    "postcode": 9230
+  },
+  {
+    "name": "Melle",
+    "link": "https://lblod.melle.be/LBLODWeb/Home/Overzicht",
+    "postcode": 9090
+  },
+  {
+    "name": "Merelbeke",
+    "link": "https://lblod.merelbeke.be/LBLODWeb/Home/Overzicht",
+    "postcode": 9820
+  },
+  {
+    "name": "Laarne",
+    "link": "https://lblod.laarne.be/LBLODWeb/Home/Overzicht",
+    "postcode": 9270
+  },
+  {
+    "name": "Zele",
+    "link": "https://lblod.zele.be/LBLODWeb/Home/Overzicht/",
+    "postcode": 9240
   }
 ]
