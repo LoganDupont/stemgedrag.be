@@ -1,0 +1,22 @@
+[
+  {
+    "name": "West-Vlaanderen",
+    "link": "https://lblod.west-vlaanderen.be/LBLODWeb/Home/Overzicht"
+  },
+  {
+    "name": "Oost-Vlaanderen",
+    "link": "https://raadpleeg-oost-vlaanderen.onlinesmartcities.be/"
+  },
+  {
+    "name": "Antwerpen",
+    "link": "https://www.provincieantwerpen.be/provinciebestuur/politiek-bestuur/provincieraad.html"
+  },
+  {
+    "name": "Limburg",
+    "link": "https://raadpleeg-limburg.onlinesmartcities.be/"
+  },
+  {
+    "name": "Vlaams-Brabant",
+    "link": "https://publicatie.gelinkt-notuleren.vlaanderen.be/Vlaams-Brabant/Provincie/zittingen"
+  }
+]
