@@ -148,5 +148,10 @@
     "name": "Zele",
     "link": "https://lblod.zele.be/LBLODWeb/Home/Overzicht/",
     "postcode": 9240
+  },
+  {
+    "name": "Ingelmunster",
+    "link": "https://lblod.ingelmunster.be/LBLODWeb/Home/Overzicht",
+    "postcode": 8770
   }
 ]
