@@ -15,13 +15,7 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": [
-          "libs/stemgedrag/data-access-europe/**/*.ts",
-          "libs/stemgedrag/data-access-europe/**/*.html"
-        ]
-      }
+      "outputs": ["{options.outputFile}"]
     }
   }
 }

@@ -15,13 +15,7 @@
     },
     "lint": {
       "executor": "@nx/eslint:lint",
-      "outputs": ["{options.outputFile}"],
-      "options": {
-        "lintFilePatterns": [
-          "libs/stemgedrag/type-mep/**/*.ts",
-          "libs/stemgedrag/type-mep/**/*.html"
-        ]
-      }
+      "outputs": ["{options.outputFile}"]
     }
   }
 }
