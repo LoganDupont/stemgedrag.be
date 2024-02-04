@@ -12,6 +12,7 @@
           <mat-icon *ngSwitchCase="'tegen'">thumb_down</mat-icon>
           <mat-icon *ngSwitchCase="'onthouding'">minimize</mat-icon>
           <mat-icon *ngSwitchCase="'niet gestemd'">cancel</mat-icon>
+          <mat-icon *ngSwitchCase="'onbepaald'">question_mark</mat-icon>
         </ng-container>
         <div class="text">{{vote.voted}}</div>
       </div>
@@ -21,15 +22,21 @@
           <div class="results">
             <div class="vote-option">
               <div class="label">Voor</div>
-              <div class="value">{{vote.stemming['aantal-voor']}}</div>
+              <div class="value">
+                {{vote.stemming ? vote.stemming['aantal-voor'] : '-'}}
+              </div>
             </div>
             <div class="vote-option">
               <div class="label">Tegen</div>
-              <div class="value">{{vote.stemming['aantal-tegen']}}</div>
+              <div class="value">
+                {{vote.stemming ? vote.stemming['aantal-tegen'] : '-'}}
+              </div>
             </div>
             <div class="vote-option">
               <div class="label">Onthouding</div>
-              <div class="value">{{vote.stemming['aantal-onthouding']}}</div>
+              <div class="value">
+                {{vote.stemming ? vote.stemming['aantal-onthouding'] : '-'}}
+              </div>
             </div>
           </div>
         </div>
