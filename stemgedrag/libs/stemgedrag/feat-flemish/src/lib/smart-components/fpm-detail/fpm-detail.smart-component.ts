@@ -29,19 +29,21 @@ export class FpmDetailSmartComponent {
     map((votes: any) =>
       votes.map((vote: any) => ({
         ...vote,
-        voted: vote.stemming['stemming-voor']
-          .map((parliamentMember: any) => parliamentMember.persoon.id)
-          .includes(Number(this.route.snapshot.paramMap.get('id')))
-          ? 'voor'
-          : vote.stemming['stemming-tegen']
+        voted: vote.stemming
+          ? vote.stemming['stemming-voor']
               .map((parliamentMember: any) => parliamentMember.persoon.id)
               .includes(Number(this.route.snapshot.paramMap.get('id')))
-          ? 'tegen'
-          : vote.stemming['stemming-onthouding']
-              .map((parliamentMember: any) => parliamentMember.persoon.id)
-              .includes(Number(this.route.snapshot.paramMap.get('id')))
-          ? 'onthouding'
-          : 'niet gestemd',
+            ? 'voor'
+            : vote.stemming['stemming-tegen']
+                .map((parliamentMember: any) => parliamentMember.persoon.id)
+                .includes(Number(this.route.snapshot.paramMap.get('id')))
+            ? 'tegen'
+            : vote.stemming['stemming-onthouding']
+                .map((parliamentMember: any) => parliamentMember.persoon.id)
+                .includes(Number(this.route.snapshot.paramMap.get('id')))
+            ? 'onthouding'
+            : 'niet gestemd'
+          : 'onbepaald',
       }))
     )
   );
