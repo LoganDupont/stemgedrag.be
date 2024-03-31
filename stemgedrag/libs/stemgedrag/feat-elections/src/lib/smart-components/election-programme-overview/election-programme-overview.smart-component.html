@@ -1,0 +1,10 @@
+<section>
+  <h1>Verkiezingsprogramma's</h1>
+  @for (party of parties; track $index) {
+  <div>
+    <a [href]="party.link" rel="noopener noreferrer" target="_blank">
+      {{party.name}}
+    </a>
+  </div>
+  }
+</section>
