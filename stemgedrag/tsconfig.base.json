@@ -33,6 +33,9 @@
       "@stemgedrag/stemgedrag/feat-commune": [
         "libs/stemgedrag/feat-commune/src/index.ts"
       ],
+      "@stemgedrag/stemgedrag/feat-elections": [
+        "libs/stemgedrag/feat-elections/src/index.ts"
+      ],
       "@stemgedrag/stemgedrag/feat-europe": [
         "libs/stemgedrag/feat-europe/src/index.ts"
       ],
