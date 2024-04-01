@@ -38,5 +38,5 @@ export class ElectionProgrammeOverviewSmartComponent {
       name: 'Vlaams Belang',
       link: 'https://www.vlaamsbelang.org/programma',
     },
-  ];
+  ].sort((a, b) => a.name.localeCompare(b.name));
 }
