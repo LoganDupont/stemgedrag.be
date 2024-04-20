@@ -38,5 +38,41 @@ export class ElectionProgrammeOverviewSmartComponent {
       name: 'Vlaams Belang',
       link: 'https://www.vlaamsbelang.org/programma',
     },
+    {
+      name: 'Voor U',
+      link: 'https://www.vooru.be/de-12-voor-u',
+    },
+    {
+      name: 'Blanco',
+      link: 'https://blanco2024.be/#voorstel',
+    },
+    {
+      name: 'Volt Europa',
+      link: 'https://voltbelgie.org/standpunten/beleidsgrondslagen/verkiezingsprogramma-2024',
+    },
+    {
+      name: 'BoerBurgerBelangen (BBB)',
+      link: 'https://boerburgerbelangen.vlaanderen/onze-standpunten/',
+    },
+    {
+      name: 'De Belgische Unie - Union Belge (B.U.B.)',
+      link: 'https://www.unionbelge.be/#program',
+    },
+    {
+      name: "L'Unie",
+      link: 'https://www.lunie.be/nl/vision',
+    },
+    {
+      name: 'Agora',
+      link: 'https://nl.agora.brussels/',
+    },
+    {
+      name: 'DierAnimal',
+      link: 'https://www.dieranimal.be/nl/home/ons-programma/',
+    },
+    {
+      name: 'Team Fouad Ahidar',
+      link: 'https://fouadahidar.com/nl/#programma',
+    },
   ].sort((a, b) => a.name.localeCompare(b.name));
 }
