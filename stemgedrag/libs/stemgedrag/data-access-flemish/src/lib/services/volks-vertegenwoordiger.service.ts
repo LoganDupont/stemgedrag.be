@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
-import { forkJoin, map, Observable, switchMap } from 'rxjs';
+import { defaultIfEmpty, forkJoin, map, Observable, switchMap } from 'rxjs';
 
 import { VolksVertegenwoordiger } from '@stemgedrag/stemgedrag/type-volks-vertegenwoordiger';
 
@@ -51,7 +51,7 @@ export class VolksVertegenwoordigerService {
           const parlementairInitiatives = urls.map((url) =>
             this.httpClient.get<any>(url, { headers: this.headers })
           );
-          return forkJoin(parlementairInitiatives);
+          return forkJoin(parlementairInitiatives).pipe(defaultIfEmpty([]));
         }),
         map((parlementairInitiatives) =>
           parlementairInitiatives.map((parlementairInitiatives: any) => ({
