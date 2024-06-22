@@ -153,5 +153,60 @@
     "name": "Ingelmunster",
     "link": "https://lblod.ingelmunster.be/LBLODWeb/Home/Overzicht",
     "postcode": 8770
+  },
+  {
+    "name": "De Panne",
+    "link": "https://lblod.depanne.be/LBLODWeb/Home/Overzicht",
+    "postcode": 8660
+  },
+  {
+    "name": "Koksijde",
+    "link": "https://koksijde-echo.cipalschaubroeck.be/raadpleegomgeving/",
+    "postcode": 8670
+  },
+  {
+    "name": "Nieuwpoort",
+    "link": "https://lblod.nieuwpoort.be/LBLODWeb/Home/Overzicht",
+    "postcode": 8620
+  },
+  {
+    "name": "Middelkerke",
+    "link": "https://lblod.middelkerke.be/LBLODWeb/Home/Overzicht",
+    "postcode": 8430
+  },
+  {
+    "name": "Oostende",
+    "link": "https://raadpleeg-oostende.onlinesmartcities.be/",
+    "postcode": 8400
+  },
+  {
+    "name": "Bredene",
+    "link": "https://lblod.bredene.be/LBLODWeb/Home/Overzicht",
+    "postcode": 8450
+  },
+  {
+    "name": "De Haan",
+    "link": "https://lblod.dehaan.be/LBLODWeb/Home/Overzicht",
+    "postcode": 8420
+  },
+  {
+    "name": "Blankenberge",
+    "link": "https://lblod.blankenberge.be/LBLODWeb/Home/Overzicht",
+    "postcode": 8370
+  },
+  {
+    "name": "Zuienkerke",
+    "link": "https://lblod.zuienkerke.be/LBLODWeb/Home/Overzicht",
+    "postcode": 8377
+  },
+  {
+    "name": "Damme",
+    "link": "https://lblod.damme.be/LBLODWeb/Home/Overzicht",
+    "postcode": 8340
+  },
+  {
+    "name": "Knokke-Heist",
+    "link": "https://lblod.knokke-heist.be/LBLODWeb/Home/Overzicht",
+    "postcode": 8300
   }
 ]
