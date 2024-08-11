@@ -1,4 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@include mat.core();
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+$theme: mat.define-theme(
+  (
+    color: (
+      theme-type: light,
+      primary: mat.$azure-palette,
+      tertiary: mat.$blue-palette,
+    ),
+    density: (
+      scale: 0,
+    ),
+  )
+);
+
+@include mat.color-variants-backwards-compatibility($theme);
+@include mat.typography-hierarchy($theme);
+
+@mixin theme($theme) {
+  .navbar-header {
+    background: mat.get-theme-color($theme, primary-container);
+    color: mat.get-theme-color($theme, primary);
+
+    .navbar-header-item {
+      color: inherit;
+    }
+  }
+}
+
+:root {
+  @include mat.all-component-themes($theme);
+  @include theme($theme);
+}
