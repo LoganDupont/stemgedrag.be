@@ -19,10 +19,7 @@
           "apps/stemgedrag/src/favicon.ico",
           "apps/stemgedrag/src/assets"
         ],
-        "styles": [
-          "@angular/material/prebuilt-themes/indigo-pink.css",
-          "apps/stemgedrag/src/styles.scss"
-        ],
+        "styles": ["apps/stemgedrag/src/styles.scss"],
         "scripts": []
       },
       "configurations": {

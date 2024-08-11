@@ -10,7 +10,7 @@
     <mat-card-header>
       <img
         mat-card-avatar
-        [ngSrc]="activeFlemishParliamentMember.volksvertegenwoordiger.fotowebpath"
+        [ngSrc]="activeFlemishParliamentMember.volksvertegenwoordiger.fotowebpath || 'unkown'"
         width="40"
         height="40"
       />
