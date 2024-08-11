@@ -28,9 +28,10 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar class="mat-elevation-z6" color="primary">
+    <mat-toolbar class="navbar-header mat-elevation-z6">
       @if (isHandset$ | async) {
       <button
+        class="navbar-header-item"
         type="button"
         aria-label="Toggle sidenav"
         mat-icon-button
@@ -40,25 +41,19 @@
       </button>
       <span>Stemgedrag.be</span>
       } @else {
-      <button mat-flat-button color="primary" routerLink="">Home</button>
-      <!-- <button mat-flat-button color="primary" routerLink="elections">
+      <a mat-button class="navbar-header-item" routerLink="">Home</a>
+      <!-- <a mat-button routerLink="elections">
         Verkiezingen
       </button> -->
-      <button mat-flat-button color="primary" routerLink="commune">
-        Gemeente
-      </button>
-      <button mat-flat-button color="primary" routerLink="province">
-        Provincie
-      </button>
-      <button mat-flat-button color="primary" routerLink="flemish">
-        Vlaanderen
-      </button>
-      <button mat-flat-button color="primary" routerLink="federal">
-        Federaal
-      </button>
-      <button mat-flat-button color="primary" routerLink="europe">
-        Europa
-      </button>
+      <a mat-button class="navbar-header-item" routerLink="commune">Gemeente</a>
+      <a mat-button class="navbar-header-item" routerLink="province"
+        >Provincie</a
+      >
+      <a mat-button class="navbar-header-item" routerLink="flemish"
+        >Vlaanderen</a
+      >
+      <a mat-button class="navbar-header-item" routerLink="federal">Federaal</a>
+      <a mat-button class="navbar-header-item" routerLink="europe">Europa</a>
       }
     </mat-toolbar>
     <div class="shell__content">
