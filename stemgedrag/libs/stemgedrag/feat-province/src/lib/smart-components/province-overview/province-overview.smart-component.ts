@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject } from '@angular/core';
+import { MatListModule } from '@angular/material/list';
 import { map } from 'rxjs';
 import { FacadeService } from '../../facade.service';
 
 @Component({
   selector: 'sg-province-overview',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, MatListModule],
   templateUrl: './province-overview.smart-component.html',
   styleUrls: ['./province-overview.smart-component.css'],
 })
