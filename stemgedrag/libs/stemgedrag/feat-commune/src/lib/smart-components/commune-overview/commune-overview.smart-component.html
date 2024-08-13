@@ -23,10 +23,32 @@
     bekendmakingen gepubliceerd worden te bezorgen.
   </p>
 </div>
-<ng-container *ngFor="let commune of sortedCommunes$ | async">
-  <div>
-    <a [href]="commune.link" rel="noopener noreferrer" target="_blank"
-      >{{commune.name}}</a
-    >
-  </div>
-</ng-container>
+<mat-form-field class="full-width" appearance="outline">
+  <mat-icon matPrefix>search</mat-icon>
+  <input
+    matInput
+    placeholder="Zoek hier uw stad of gemeente"
+    [(ngModel)]="searchValue"
+  />
+  @if (searchValue()) {
+  <button
+    matSuffix
+    mat-icon-button
+    aria-label="Clear"
+    (click)="searchValue.set('')"
+  >
+    <mat-icon>close</mat-icon>
+  </button>
+  }
+</mat-form-field>
+<mat-nav-list>
+  @for (commune of filteredCommunes(); track commune) {
+  <a
+    mat-list-item
+    [href]="commune.link"
+    rel="noopener noreferrer"
+    target="_blank"
+    >{{ commune.name }}</a
+  >
+  }
+</mat-nav-list>
