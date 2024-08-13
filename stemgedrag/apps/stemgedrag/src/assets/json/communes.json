@@ -61,7 +61,7 @@
   },
   {
     "name": "Hasselt",
-    "link": "https://ebesluit.hasselt.be/suite-consult/",
+    "link": "https://besluitvorming.hasselt.be/",
     "postcode": 3500
   },
   {
@@ -208,5 +208,55 @@
     "name": "Knokke-Heist",
     "link": "https://lblod.knokke-heist.be/LBLODWeb/Home/Overzicht",
     "postcode": 8300
+  },
+  {
+    "name": "Aarschot",
+    "link": "https://aarschot-echo.cipalschaubroeck.be/raadpleegomgeving/",
+    "postcode": 3200
+  },
+  {
+    "name": "Sint-Niklaas",
+    "link": "https://raadpleeg-sint-niklaas.onlinesmartcities.be/",
+    "postcode": 9100
+  },
+  {
+    "name": "Aalst",
+    "link": "https://raadpleeg-aalst.onlinesmartcities.be/",
+    "postcode": 9300
+  },
+  {
+    "name": "Buggenhout",
+    "link": "https://lblod.buggenhout.be/LBLODWeb/Home/Overzicht",
+    "postcode": 9255
+  },
+  {
+    "name": "Zulte",
+    "link": "https://zulte-echo.cipalschaubroeck.be/raadpleegomgeving/",
+    "postcode": 9870
+  },
+  {
+    "name": "Waregem",
+    "link": "https://lblod.waregem.be/LBLODWeb/Home/Overzicht",
+    "postcode": 8790
+  },
+  {
+    "name": "Deinze",
+    "link": "https://deinze-echo.cipalschaubroeck.be/raadpleegomgeving/",
+    "postcode": 9800
+  },
+  {
+    "name": "Sint-Truiden",
+    "link": "https://raadpleeg-sint-truiden.onlinesmartcities.be/",
+    "postcode": 3800
+  },
+  {
+    "name": "Diest",
+    "link": "https://raadpleeg-diest.onlinesmartcities.be/",
+    "postcode": 3290
+  },
+  {
+    "name": "Ninove",
+    "link": "https://lblod.ninove.be/LBLODWeb/Home/Overzicht",
+    "postcode": 9400
   }
 ]
