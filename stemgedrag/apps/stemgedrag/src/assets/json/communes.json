@@ -258,5 +258,65 @@
     "name": "Ninove",
     "link": "https://lblod.ninove.be/LBLODWeb/Home/Overzicht",
     "postcode": 9400
+  },
+  {
+    "name": "Aalter",
+    "link": "https://raadpleeg-aalter.onlinesmartcities.be/",
+    "postcode": [9880, 9881, 9910]
+  },
+  {
+    "name": "Aartselaar",
+    "link": "https://aartselaar-echo.cipalschaubroeck.be/raadpleegomgeving/",
+    "postcode": 2630
+  },
+  {
+    "name": "Affligem",
+    "link": "https://affligem-echo.cipalschaubroeck.be/raadpleegomgeving/",
+    "postcode": 1790
+  },
+  {
+    "name": "Alken",
+    "link": "https://alken.meetingburger.net",
+    "postcode": 3570
+  },
+  {
+    "name": "Alveringem",
+    "link": "https://alveringem-echo.cipalschaubroeck.be/raadpleegomgeving/",
+    "postcode": 8690
+  },
+  {
+    "name": "Anzegem",
+    "link": "https://anzegem-echo.cipalschaubroeck.be/raadpleegomgeving/",
+    "postcode": 8570
+  },
+  {
+    "name": "Ardooie",
+    "link": "https://ardooie-echo.cipalschaubroeck.be/raadpleegomgeving/",
+    "postcode": 8850
+  },
+  {
+    "name": "Arendonk",
+    "link": "https://raadpleeg-arendonk.onlinesmartcities.be/",
+    "postcode": 2370
+  },
+  {
+    "name": "As",
+    "link": "https://raadpleeg-as.onlinesmartcities.be/",
+    "postcode": 3665
+  },
+  {
+    "name": "Asse",
+    "link": "https://asse.meetingburger.net",
+    "postcode": 1730
+  },
+  {
+    "name": "Assenede",
+    "link": "https://lblod.assenede.be/LBLODweb/Home/Overzicht",
+    "postcode": 9960
+  },
+  {
+    "name": "Avelgem",
+    "link": "https://lblod.avelgem.be/LBLODWeb/Home/Overzicht",
+    "postcode": 8580
   }
 ]
