@@ -13,13 +13,13 @@ export const stemgedragFeatShellRoutes: Route[] = [
             (mod) => mod.stemgedragFeatHomeRoutes
           ),
       },
-      // {
-      //   path: 'elections',
-      //   loadChildren: () =>
-      //     import('@stemgedrag/stemgedrag/feat-elections').then(
-      //       (mod) => mod.stemgedragFeatElectionsRoutes
-      //     ),
-      // },
+      {
+        path: 'elections',
+        loadChildren: () =>
+          import('@stemgedrag/stemgedrag/feat-elections').then(
+            (mod) => mod.stemgedragFeatElectionsRoutes
+          ),
+      },
       {
         path: 'europe',
         loadChildren: () =>
