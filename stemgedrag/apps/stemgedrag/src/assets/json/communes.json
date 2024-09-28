@@ -318,5 +318,10 @@
     "name": "Avelgem",
     "link": "https://lblod.avelgem.be/LBLODWeb/Home/Overzicht",
     "postcode": 8580
+  },
+  {
+    "name": "Zedelgem",
+    "link": "https://www.zedelgem.be/lokaal-bestuur-zedelgem",
+    "postcode": 8210
   }
 ]
