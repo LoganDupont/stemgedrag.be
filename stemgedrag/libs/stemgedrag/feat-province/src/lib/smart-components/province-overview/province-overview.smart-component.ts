@@ -5,11 +5,10 @@ import { map } from 'rxjs';
 import { FacadeService } from '../../facade.service';
 
 @Component({
-  selector: 'sg-province-overview',
-  standalone: true,
-  imports: [CommonModule, MatListModule],
-  templateUrl: './province-overview.smart-component.html',
-  styleUrls: ['./province-overview.smart-component.css'],
+    selector: 'sg-province-overview',
+    imports: [CommonModule, MatListModule],
+    templateUrl: './province-overview.smart-component.html',
+    styleUrls: ['./province-overview.smart-component.css']
 })
 export class ProvinceOverviewSmartComponent {
   private readonly facadeService = inject(FacadeService);

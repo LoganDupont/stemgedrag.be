@@ -10,19 +10,18 @@ import { RouterModule } from '@angular/router';
 import { Observable, map, shareReplay } from 'rxjs';
 
 @Component({
-  selector: 'sg-stemgedrag-feat-shell',
-  standalone: true,
-  imports: [
-    CommonModule,
-    RouterModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatListModule,
-    MatIconModule,
-  ],
-  templateUrl: './stemgedrag-feat-shell.component.html',
-  styleUrls: ['./stemgedrag-feat-shell.component.scss'],
+    selector: 'sg-stemgedrag-feat-shell',
+    imports: [
+        CommonModule,
+        RouterModule,
+        MatToolbarModule,
+        MatButtonModule,
+        MatSidenavModule,
+        MatListModule,
+        MatIconModule,
+    ],
+    templateUrl: './stemgedrag-feat-shell.component.html',
+    styleUrls: ['./stemgedrag-feat-shell.component.scss']
 })
 export class StemgedragFeatShellComponent {
   private breakpointObserver = inject(BreakpointObserver);

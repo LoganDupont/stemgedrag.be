@@ -4,10 +4,9 @@ import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 
 @Component({
-  selector: 'stemgedrag-introduction',
-  standalone: true,
-  imports: [CommonModule, MatButtonModule, ClipboardModule],
-  templateUrl: './introduction.smart-component.html',
-  styleUrls: ['./introduction.smart-component.scss'],
+    selector: 'stemgedrag-introduction',
+    imports: [CommonModule, MatButtonModule, ClipboardModule],
+    templateUrl: './introduction.smart-component.html',
+    styleUrls: ['./introduction.smart-component.scss']
 })
 export class IntroductionSmartComponent {}

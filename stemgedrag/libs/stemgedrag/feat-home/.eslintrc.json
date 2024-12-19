@@ -20,7 +20,8 @@
             "prefix": "stemgedrag",
             "style": "kebab-case"
           }
-        ]
+        ],
+        "@angular-eslint/prefer-standalone": "true"
       },
       "extends": [
         "plugin:@nx/angular",

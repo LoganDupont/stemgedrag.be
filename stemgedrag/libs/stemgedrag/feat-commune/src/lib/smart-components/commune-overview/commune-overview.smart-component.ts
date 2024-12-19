@@ -10,19 +10,18 @@ import { MatListModule } from '@angular/material/list';
 import { FacadeService } from '../../facade.service';
 
 @Component({
-  selector: 'sg-commune-overview',
-  standalone: true,
-  imports: [
-    CommonModule,
-    MatFormFieldModule,
-    MatInputModule,
-    FormsModule,
-    MatButtonModule,
-    MatIconModule,
-    MatListModule,
-  ],
-  templateUrl: './commune-overview.smart-component.html',
-  styleUrls: ['./commune-overview.smart-component.scss'],
+    selector: 'sg-commune-overview',
+    imports: [
+        CommonModule,
+        MatFormFieldModule,
+        MatInputModule,
+        FormsModule,
+        MatButtonModule,
+        MatIconModule,
+        MatListModule,
+    ],
+    templateUrl: './commune-overview.smart-component.html',
+    styleUrls: ['./commune-overview.smart-component.scss']
 })
 export class CommuneOverviewSmartComponent {
   private readonly facadeService = inject(FacadeService);
