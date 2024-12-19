@@ -2,11 +2,10 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'lib-election-programme-overview',
-  standalone: true,
-  imports: [CommonModule],
-  templateUrl: './election-programme-overview.smart-component.html',
-  styleUrl: './election-programme-overview.smart-component.css',
+    selector: 'lib-election-programme-overview',
+    imports: [CommonModule],
+    templateUrl: './election-programme-overview.smart-component.html',
+    styleUrl: './election-programme-overview.smart-component.css'
 })
 export class ElectionProgrammeOverviewSmartComponent {
   // protected parties: any[] = [
