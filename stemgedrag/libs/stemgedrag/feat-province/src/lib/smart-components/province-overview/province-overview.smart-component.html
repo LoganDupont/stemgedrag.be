@@ -1,24 +1,26 @@
-<div>
-  <p>
-    Net als lokale besturen zijn provincies verplicht een groot aantal van hun
-    beslissingen te publiceren op hun website. Op deze manier kan je die
-    beslissingen eenvoudig kennen, raadplegen en eventueel klacht indienen.
-  </p>
-  <p>
-    Indien u het stemgedrag wenst te weten te komen kan u steeds de
-    <b>notulen</b>
-    raadplegen.
-  </p>
+<div class="page-container">
+  <div>
+    <p>
+      Net als lokale besturen zijn provincies verplicht een groot aantal van hun
+      beslissingen te publiceren op hun website. Op deze manier kan je die
+      beslissingen eenvoudig kennen, raadplegen en eventueel klacht indienen.
+    </p>
+    <p>
+      Indien u het stemgedrag wenst te weten te komen kan u steeds de
+      <b>notulen</b>
+      raadplegen.
+    </p>
+  </div>
+  <mat-nav-list>
+    @let sortedProvinces = (sortedProvinces$ | async); @for (province of
+    sortedProvinces; track province) {
+    <a
+      mat-list-item
+      [href]="province.link"
+      rel="noopener noreferrer"
+      target="_blank"
+      >{{ province.name }}</a
+    >
+    }
+  </mat-nav-list>
 </div>
-<mat-nav-list>
-  @let sortedProvinces = (sortedProvinces$ | async); @for (province of
-  sortedProvinces; track province) {
-  <a
-    mat-list-item
-    [href]="province.link"
-    rel="noopener noreferrer"
-    target="_blank"
-    >{{ province.name }}</a
-  >
-  }
-</mat-nav-list>
