@@ -2,7 +2,10 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { defaultIfEmpty, forkJoin, map, Observable, switchMap } from 'rxjs';
 
-import { VolksVertegenwoordiger } from '@stemgedrag/stemgedrag/type-volks-vertegenwoordiger';
+import {
+  VolksVertegenwoordiger,
+  VolksVertegenwoordigerF,
+} from '@stemgedrag/stemgedrag/type-volks-vertegenwoordiger';
 
 @Injectable({ providedIn: 'root' })
 export class VolksVertegenwoordigerService {
@@ -20,6 +23,17 @@ export class VolksVertegenwoordigerService {
     return this.httpClient
       .get<any>(`${this.apiUrl}/vv/huidige`, { headers: this.headers })
       .pipe(map((data) => data.items));
+  }
+
+  public getDetailsFlemishParliamentMember(
+    id: string
+  ): Observable<VolksVertegenwoordigerF> {
+    return this.httpClient.get<VolksVertegenwoordigerF>(
+      `${this.apiUrl}/vv/${id}`,
+      {
+        headers: this.headers,
+      }
+    );
   }
 
   public getVotesByFlemishParliamentMember(): Observable<any> {

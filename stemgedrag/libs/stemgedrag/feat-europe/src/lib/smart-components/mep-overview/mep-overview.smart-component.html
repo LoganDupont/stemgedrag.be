@@ -1,42 +1,44 @@
-<ng-container *ngIf="belgianMEPs$ | async as belgianMEPs; else showMessage">
-  <ng-container *ngFor="let mep of belgianMEPs">
-    <div>
-      <a [routerLink]="mep.identifier">{{mep.label}}</a>
-    </div>
+<div class="page-container">
+  <ng-container *ngIf="belgianMEPs$ | async as belgianMEPs; else showMessage">
+    <ng-container *ngFor="let mep of belgianMEPs">
+      <div>
+        <a [routerLink]="mep.identifier">{{mep.label}}</a>
+      </div>
+    </ng-container>
   </ng-container>
-</ng-container>
 
-<ng-template #showMessage>
-  <p>
-    Het Europeese Parlement laat momenteel niet toe dat andere domeinen hun api
-    aanspreken.
-  </p>
-  <a
-    href="https://data.europarl.europa.eu/nl/developer-corner/opendata-api"
-    rel="noopener noreferrer"
-    target="_blank"
-    >https://data.europarl.europa.eu/nl/developer-corner/opendata-api</a
-  >
-
-  <p>
-    Als alternatief kan u steeds de notulen van de plenaire vergaderingen
-    raadplegen om het stemgedrag van een parlementslid te achterhalen.
-  </p>
-  <a
-    href="https://www.europarl.europa.eu/plenary/nl/minutes.html"
-    rel="noopener noreferrer"
-    target="_blank"
-    >https://www.europarl.europa.eu/plenary/nl/minutes.html</a
-  >
-
-  <p>
-    Neem
+  <ng-template #showMessage>
+    <p>
+      Het Europeese Parlement laat momenteel niet toe dat andere domeinen hun
+      api aanspreken.
+    </p>
     <a
-      href="https://data.europarl.europa.eu/nl/contact?contactTheme=site.contact.theme.issue-report"
+      href="https://data.europarl.europa.eu/nl/developer-corner/opendata-api"
       rel="noopener noreferrer"
       target="_blank"
-      >contact</a
+      >https://data.europarl.europa.eu/nl/developer-corner/opendata-api</a
     >
-    op en help mee om het probleem aan te kaarten.
-  </p>
-</ng-template>
+
+    <p>
+      Als alternatief kan u steeds de notulen van de plenaire vergaderingen
+      raadplegen om het stemgedrag van een parlementslid te achterhalen.
+    </p>
+    <a
+      href="https://www.europarl.europa.eu/plenary/nl/minutes.html"
+      rel="noopener noreferrer"
+      target="_blank"
+      >https://www.europarl.europa.eu/plenary/nl/minutes.html</a
+    >
+
+    <p>
+      Neem
+      <a
+        href="https://data.europarl.europa.eu/nl/contact?contactTheme=site.contact.theme.issue-report"
+        rel="noopener noreferrer"
+        target="_blank"
+        >contact</a
+      >
+      op en help mee om het probleem aan te kaarten.
+    </p>
+  </ng-template>
+</div>

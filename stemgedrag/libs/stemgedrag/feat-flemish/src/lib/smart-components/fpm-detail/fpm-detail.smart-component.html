@@ -1,50 +1,113 @@
-<!-- {{votes$ |async | json}} -->
-<ng-container *ngIf="votes$ | async as votes; else loading">
-  <ng-container *ngFor="let vote of votes">
-    <!-- <div>{{vote | json}}</div> -->
-    <mat-card
-      class="card-member-vote"
-      (click)="navigateToParliamentaryInitiativeDetailPage(vote)"
-    >
-      <div class="vote-result">
-        <ng-container [ngSwitch]="vote.voted">
-          <mat-icon *ngSwitchCase="'voor'">thumb_up</mat-icon>
-          <mat-icon *ngSwitchCase="'tegen'">thumb_down</mat-icon>
-          <mat-icon *ngSwitchCase="'onthouding'">minimize</mat-icon>
-          <mat-icon *ngSwitchCase="'niet gestemd'">cancel</mat-icon>
-          <mat-icon *ngSwitchCase="'onbepaald'">question_mark</mat-icon>
-        </ng-container>
-        <div class="text">{{vote.voted}}</div>
+<mat-sidenav-container class="sidenav-container">
+  @if ((isHandset$ | async) === false) {
+  <mat-sidenav
+    class="sidenav"
+    mode="side"
+    fixedTopGap="64"
+    fixedInViewport
+    opened
+    disableClose
+  >
+    <div class="fpm-detail">
+      <div class="info">
+        <img
+          class="avatar"
+          [src]="flemishParliamentMember()?.fotowebpath || 'unkown'"
+          width="160"
+          height="160"
+        />
+        <div class="name">
+          {{flemishParliamentMember()?.voornaam || ''}}
+          {{flemishParliamentMember()?.naam || ''}}
+        </div>
+        <img
+          class="party"
+          [src]="flemishParliamentMember()?.huidigefractie?.logo"
+          width="88"
+          height="28"
+        />
       </div>
-      <div class="vote-details">
-        <div class="content">
-          <div class="subject">{{vote.title}}</div>
-          <div class="results">
-            <div class="vote-option">
-              <div class="label">Voor</div>
-              <div class="value">
-                {{vote.stemming ? vote.stemming['aantal-voor'] : '-'}}
-              </div>
+
+      <div class="presence">
+        <div>Aanwezigheid: <b>{{presence() | percent: '1.0-2'}}</b></div>
+        <div class="presence-plenary">
+          <span>Plenaire vergaderingen:</span>
+          <div class="presence-options">
+            <div class="presence-option">
+              <span class="dot green"></span>
+              <div>Aanwezig: <b>{{present()}}</b></div>
             </div>
-            <div class="vote-option">
-              <div class="label">Tegen</div>
-              <div class="value">
-                {{vote.stemming ? vote.stemming['aantal-tegen'] : '-'}}
-              </div>
+            <div class="presence-option">
+              <span class="dot orange"></span>
+              <div>Veronschuldigd: <b>{{apologized()}}</b></div>
             </div>
-            <div class="vote-option">
-              <div class="label">Onthouding</div>
-              <div class="value">
-                {{vote.stemming ? vote.stemming['aantal-onthouding'] : '-'}}
-              </div>
+            <div class="presence-option">
+              <span class="dot red"></span>
+              <div>Afwezig: <b>{{absent()}}</b></div>
+            </div>
+            <div class="presence-option">
+              <span class="dot grey"></span>
+              <div>Totaal: <b>{{total()}}</b></div>
             </div>
           </div>
         </div>
-        <div class="info"></div>
       </div>
-    </mat-card>
-  </ng-container>
-</ng-container>
-<ng-template #loading>
-  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
-</ng-template>
+    </div>
+  </mat-sidenav>
+  }
+  <mat-sidenav-content class="sidenav-content">
+    <ng-container *ngIf="votes$ | async as votes; else loading">
+      @for (vote of votes; track vote) {
+      <mat-card
+        class="card-member-vote"
+        (click)="navigateToParliamentaryInitiativeDetailPage(vote)"
+      >
+        <div class="vote-result">
+          <ng-container [ngSwitch]="vote.voted">
+            <mat-icon *ngSwitchCase="'voor'">thumb_up</mat-icon>
+            <mat-icon *ngSwitchCase="'tegen'">thumb_down</mat-icon>
+            <mat-icon *ngSwitchCase="'onthouding'">minimize</mat-icon>
+            <mat-icon *ngSwitchCase="'niet gestemd'">cancel</mat-icon>
+            <mat-icon *ngSwitchCase="'onbepaald'">question_mark</mat-icon>
+          </ng-container>
+          <div class="text">{{vote.voted}}</div>
+        </div>
+        <div class="vote-details">
+          <div class="content">
+            <div class="subject">{{vote.title}}</div>
+            <div class="results">
+              <div class="vote-option">
+                <div class="label">Voor</div>
+                <div class="value">
+                  {{vote.stemming ? vote.stemming['aantal-voor'] : '-'}}
+                </div>
+              </div>
+              <div class="vote-option">
+                <div class="label">Tegen</div>
+                <div class="value">
+                  {{vote.stemming ? vote.stemming['aantal-tegen'] : '-'}}
+                </div>
+              </div>
+              <div class="vote-option">
+                <div class="label">Onthouding</div>
+                <div class="value">
+                  {{vote.stemming ? vote.stemming['aantal-onthouding'] : '-'}}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info"></div>
+        </div>
+      </mat-card>
+      } @empty {
+      <p>
+        Er vond geen hoofdelijke stemming plaats voor de laatste plenaire
+        vergadering.
+      </p>
+      }
+    </ng-container>
+    <ng-template #loading>
+      <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+    </ng-template>
+  </mat-sidenav-content>
+</mat-sidenav-container>
