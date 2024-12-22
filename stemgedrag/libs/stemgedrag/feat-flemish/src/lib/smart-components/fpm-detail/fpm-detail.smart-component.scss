@@ -1,22 +1,105 @@
 @use '@angular/material' as mat;
 
-:host{
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  @include mat.sidenav-overrides(
+    (
+      container-shape: 0%,
+      container-divider-color: #c4c6d0,
+      container-width: 240px,
+    )
+  );
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.fpm-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 16px;
+}
+
+.info {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  align-items: center;
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.presence {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.presence-options,
+.presence-plenary {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.presence-option {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+.dot {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  display: inline-block;
+
+  &.green {
+    background-color: #399f6b;
+  }
+
+  &.red {
+    background-color: #de350a;
+  }
+
+  &.orange {
+    background-color: #feaa00;
+  }
+
+  &.grey {
+    background-color: #bbb;
+  }
+}
+
+.sidenav-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
 }
 
 .card-member-vote {
   display: flex;
   flex-direction: row;
 
-  &:hover{
+  &:hover {
     cursor: pointer;
     @include mat.elevation(8);
   }
 
   .vote-result {
-    background-color: rgba(248,246,252,.5);
+    background-color: rgba(248, 246, 252, 0.5);
     border-right: 1px solid #cbc9cd;
     min-width: 100px;
     padding: 16px;
@@ -59,8 +142,8 @@
         flex-direction: row;
         gap: 64px;
 
-        .vote-option{
-          .label{
+        .vote-option {
+          .label {
             color: #717171;
             font-size: 1rem;
             line-height: 1.4;
@@ -77,11 +160,6 @@
     }
   }
 }
-
-
-
-
-
 
 .row {
   display: flex;

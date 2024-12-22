@@ -6,11 +6,10 @@ import { RouterModule } from '@angular/router';
 import { FacadeService } from '../../facade.service';
 
 @Component({
-  selector: 'sg-mep-overview',
-  standalone: true,
-  imports: [CommonModule, RouterModule, MatProgressBarModule],
-  templateUrl: './mep-overview.smart-component.html',
-  styleUrls: ['./mep-overview.smart-component.scss'],
+    selector: 'sg-mep-overview',
+    imports: [CommonModule, RouterModule, MatProgressBarModule],
+    templateUrl: './mep-overview.smart-component.html',
+    styleUrls: ['./mep-overview.smart-component.scss']
 })
 export class MepOverviewSmartComponent {
   private readonly facadeService = inject(FacadeService);

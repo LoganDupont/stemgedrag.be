@@ -1,34 +1,37 @@
-@if (activeFlemishParliamentMembers$ | async; as activeFlemishParliamentMembers)
-{
-<div class="container">
-  @for ( activeFlemishParliamentMember of activeFlemishParliamentMembers ; track
-  activeFlemishParliamentMember.volksvertegenwoordiger.id) {
-  <mat-card
-    class="item"
-    [routerLink]="activeFlemishParliamentMember.volksvertegenwoordiger.id"
-  >
-    <mat-card-header>
-      <img
-        mat-card-avatar
-        [ngSrc]="activeFlemishParliamentMember.volksvertegenwoordiger.fotowebpath || 'unkown'"
-        width="40"
-        height="40"
-      />
-      <mat-card-title>
-        {{ activeFlemishParliamentMember.volksvertegenwoordiger.voornaam }} {{
-        activeFlemishParliamentMember.volksvertegenwoordiger.naam}}
-      </mat-card-title>
-      <mat-card-subtitle>
-        {{activeFlemishParliamentMember.volksvertegenwoordiger.fractie.naam}}
-      </mat-card-subtitle>
-    </mat-card-header>
-  </mat-card>
-  } @empty {
-  <p>
-    Momenteel zijn er geen volksvertegenwoordigers voor de huidige legislatuur.
-  </p>
+<div class="page-container">
+  @if (activeFlemishParliamentMembers$ | async; as
+  activeFlemishParliamentMembers) {
+  <div class="container">
+    @for ( activeFlemishParliamentMember of activeFlemishParliamentMembers ;
+    track activeFlemishParliamentMember.volksvertegenwoordiger.id) {
+    <mat-card
+      class="item"
+      [routerLink]="activeFlemishParliamentMember.volksvertegenwoordiger.id"
+    >
+      <mat-card-header>
+        <img
+          mat-card-avatar
+          [ngSrc]="activeFlemishParliamentMember.volksvertegenwoordiger.fotowebpath || 'unkown'"
+          width="40"
+          height="40"
+        />
+        <mat-card-title>
+          {{ activeFlemishParliamentMember.volksvertegenwoordiger.voornaam }} {{
+          activeFlemishParliamentMember.volksvertegenwoordiger.naam}}
+        </mat-card-title>
+        <mat-card-subtitle>
+          {{activeFlemishParliamentMember.volksvertegenwoordiger.fractie.naam}}
+        </mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+    } @empty {
+    <p>
+      Momenteel zijn er geen volksvertegenwoordigers voor de huidige
+      legislatuur.
+    </p>
+    }
+  </div>
+  } @else {
+  <mat-progress-bar mode="indeterminate"></mat-progress-bar>
   }
 </div>
-} @else {
-<mat-progress-bar mode="indeterminate"></mat-progress-bar>
-}

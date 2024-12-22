@@ -7,17 +7,16 @@ import { RouterModule } from '@angular/router';
 import { FacadeService } from '../../facade.service';
 
 @Component({
-  selector: 'sg-fpm-overview',
-  standalone: true,
-  imports: [
-    CommonModule,
-    RouterModule,
-    MatCardModule,
-    NgOptimizedImage,
-    MatProgressBarModule,
-  ],
-  templateUrl: './fpm-overview.smart-component.html',
-  styleUrls: ['./fpm-overview.smart-component.scss'],
+    selector: 'sg-fpm-overview',
+    imports: [
+        CommonModule,
+        RouterModule,
+        MatCardModule,
+        NgOptimizedImage,
+        MatProgressBarModule,
+    ],
+    templateUrl: './fpm-overview.smart-component.html',
+    styleUrls: ['./fpm-overview.smart-component.scss']
 })
 export class FpmOverviewSmartComponent {
   private readonly facadeService = inject(FacadeService);
