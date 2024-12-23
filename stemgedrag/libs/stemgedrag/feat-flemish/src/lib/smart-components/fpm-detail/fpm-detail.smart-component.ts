@@ -80,7 +80,7 @@ export class FpmDetailSmartComponent {
     () =>
       this.flemishParliamentMember()?.['aanwezigheden-huidige-legislatuur']?.[
         'plenaire-aanw'
-      ]?.veronschuldigd || 0
+      ]?.verontschuldigd || 0
   );
   protected absent = computed(
     () =>

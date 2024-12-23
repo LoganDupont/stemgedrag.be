@@ -17,7 +17,7 @@ export type VolksVertegenwoordigerF = Readonly<{
       };
     }[];
     'plenaire-aanw': {
-      veronschuldigd: number;
+      verontschuldigd: number;
       afwezig: number;
       aanwezig: number;
     };
