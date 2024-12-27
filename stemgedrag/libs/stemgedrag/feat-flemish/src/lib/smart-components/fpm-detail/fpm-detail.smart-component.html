@@ -12,17 +12,16 @@
       <div class="info">
         <img
           class="avatar"
-          [src]="flemishParliamentMember()?.fotowebpath || 'unkown'"
+          [src]="fpMember()?.fotowebpath || 'unkown'"
           width="160"
           height="160"
         />
         <div class="name">
-          {{flemishParliamentMember()?.voornaam || ''}}
-          {{flemishParliamentMember()?.naam || ''}}
+          {{fpMember()?.voornaam || ''}} {{fpMember()?.naam || ''}}
         </div>
         <img
           class="party"
-          [src]="flemishParliamentMember()?.huidigefractie?.logo"
+          [src]="fpMember()?.huidigefractie?.logo"
           width="88"
           height="28"
         />

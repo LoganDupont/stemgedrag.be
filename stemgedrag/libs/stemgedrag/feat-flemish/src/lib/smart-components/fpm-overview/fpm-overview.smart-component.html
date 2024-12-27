@@ -1,9 +1,26 @@
 <div class="page-container">
-  @if (activeFlemishParliamentMembers$ | async; as
-  activeFlemishParliamentMembers) {
+  @if (!isActiveFpMembersLoading()) {
+  <mat-form-field class="full-width" appearance="outline">
+    <mat-icon matPrefix>search</mat-icon>
+    <input
+      matInput
+      placeholder="Zoek hier uw Vlaamse volksvertegenwoordiger"
+      [(ngModel)]="searchValue"
+    />
+    @if (searchValue()) {
+    <button
+      matSuffix
+      mat-icon-button
+      aria-label="Clear"
+      (click)="searchValue.set('')"
+    >
+      <mat-icon>close</mat-icon>
+    </button>
+    }
+  </mat-form-field>
   <div class="container">
-    @for ( activeFlemishParliamentMember of activeFlemishParliamentMembers ;
-    track activeFlemishParliamentMember.volksvertegenwoordiger.id) {
+    @for ( activeFlemishParliamentMember of filteredActiveFpMembers() ; track
+    activeFlemishParliamentMember.volksvertegenwoordiger.id) {
     <mat-card
       class="item"
       [routerLink]="activeFlemishParliamentMember.volksvertegenwoordiger.id"
@@ -25,10 +42,7 @@
       </mat-card-header>
     </mat-card>
     } @empty {
-    <p>
-      Momenteel zijn er geen volksvertegenwoordigers voor de huidige
-      legislatuur.
-    </p>
+    <p>Er zijn geen Vlaamse volksvertegenwoordigers gevonden.</p>
     }
   </div>
   } @else {
