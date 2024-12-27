@@ -15,7 +15,7 @@ export class VolksVertegenwoordigerService {
     accept: 'application/json;charset=UTF-8',
   };
 
-  public getActiveFlemishParliamentMembers(): Observable<
+  public getActiveFpMembers(): Observable<
     {
       volksvertegenwoordiger: VolksVertegenwoordiger;
     }[]
@@ -25,9 +25,7 @@ export class VolksVertegenwoordigerService {
       .pipe(map((data) => data.items));
   }
 
-  public getDetailsFlemishParliamentMember(
-    id: string
-  ): Observable<VolksVertegenwoordigerF> {
+  public getDetailsFpMember(id: string): Observable<VolksVertegenwoordigerF> {
     return this.httpClient.get<VolksVertegenwoordigerF>(
       `${this.apiUrl}/vv/${id}`,
       {
@@ -36,7 +34,7 @@ export class VolksVertegenwoordigerService {
     );
   }
 
-  public getVotesByFlemishParliamentMember(): Observable<any> {
+  public getVotesByFpMember(): Observable<any> {
     return this.httpClient
       .get<any>(`${this.apiUrl}/verg/vorige?type=plen&dagen=100`, {
         headers: this.headers,

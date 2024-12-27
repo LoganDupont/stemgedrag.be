@@ -15,23 +15,19 @@ export class FacadeService {
     VolksVertegenwoordigerService
   );
 
-  public getActiveFlemishParliamentMembers(): Observable<
+  public getActiveFpMembers(): Observable<
     {
       volksvertegenwoordiger: VolksVertegenwoordiger;
     }[]
   > {
-    return this.volksVertegenwoordigerService.getActiveFlemishParliamentMembers();
+    return this.volksVertegenwoordigerService.getActiveFpMembers();
   }
 
-  public getDetailsFlemishParliamentMember(
-    id: string
-  ): Observable<VolksVertegenwoordigerF> {
-    return this.volksVertegenwoordigerService.getDetailsFlemishParliamentMember(
-      id
-    );
+  public getDetailsFpMember(id: string): Observable<VolksVertegenwoordigerF> {
+    return this.volksVertegenwoordigerService.getDetailsFpMember(id);
   }
 
-  public getVotesByFlemishParliamentMember(): Observable<any> {
-    return this.volksVertegenwoordigerService.getVotesByFlemishParliamentMember();
+  public getVotesByFpMember(): Observable<any> {
+    return this.volksVertegenwoordigerService.getVotesByFpMember();
   }
 }
