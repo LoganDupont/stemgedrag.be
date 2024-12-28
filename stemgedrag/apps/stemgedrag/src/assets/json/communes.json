@@ -2,47 +2,47 @@
   {
     "name": "Herzele",
     "link": "https://lblod.herzele.be/LBLODWeb/Home/Overzicht",
-    "postcode": 9550
+    "postcode": [9550, 9551, 9552]
   },
   {
     "name": "Zottegem",
     "link": "https://lblod.zottegem.be/LBLODWeb/Home/Overzicht/",
-    "postcode": 9620
+    "postcode": [9620]
   },
   {
     "name": "Oosterzele",
     "link": "https://lblod.oosterzele.be/LBLODWeb/Home/Overzicht",
-    "postcode": 9860
+    "postcode": [9860]
   },
   {
     "name": "Geraardsbergen",
     "link": "https://geraardsbergen-echo.cipalschaubroeck.be/raadpleegomgeving/",
-    "postcode": 9500
+    "postcode": [9500, 9506]
   },
   {
     "name": "Brakel",
     "link": "https://brakel-echo.cipalschaubroeck.be/raadpleegomgeving/",
-    "postcode": 9660
+    "postcode": [9660, 9661]
   },
   {
     "name": "Sint-Lievens-Houtem",
     "link": "https://lblod.sint-lievens-houtem.be/LBLODWeb/Home/Overzicht",
-    "postcode": 9520
+    "postcode": [9520, 9521]
   },
   {
     "name": "Zwalm",
     "link": "https://zwalm-echo.cipalschaubroeck.be/raadpleegomgeving/",
-    "postcode": 9630
+    "postcode": [9630, 9636]
   },
   {
     "name": "Oudenaarde",
     "link": "https://lblod.oudenaarde.be/LBLODWeb/Home/Overzicht",
-    "postcode": 9700
+    "postcode": [9700]
   },
   {
     "name": "Gent",
     "link": "https://ebesluitvorming.gent.be/",
-    "postcode": 9000
+    "postcode": [9000, 9030, 9031, 9032, 9040, 9041, 9042, 9050, 9051, 9052]
   },
   {
     "name": "Kortrijk",
@@ -72,42 +72,42 @@
   {
     "name": "Kruisem",
     "link": "https://kruisem-echo.cipalschaubroeck.be/raadpleegomgeving/",
-    "postcode": [9750, 9770]
+    "postcode": [9750, 9770, 9771, 9772]
   },
   {
     "name": "Destelbergen",
     "link": "https://www.destelbergen.be/bestuur/reglementen-besluiten",
-    "postcode": 9070
+    "postcode": [9070]
   },
   {
     "name": "Ronse",
     "link": "https://lblod.ronse.be/LBLODWeb/Home/Overzicht",
-    "postcode": 9600
+    "postcode": [9600]
   },
   {
     "name": "Kluisbergen",
     "link": "https://lblod.kluisbergen.be/LBLODWeb/Home/Overzicht",
-    "postcode": 9690
+    "postcode": [9690]
   },
   {
     "name": "Wortegem-Petegem",
     "link": "https://lblod.wortegem-petegem.be/LBLODWeb/Home/Overzicht",
-    "postcode": 9790
+    "postcode": [9790]
   },
   {
     "name": "Horebeke",
     "link": "https://lblod.horebeke.be/LBLODWeb/Home/Overzicht",
-    "postcode": 9667
+    "postcode": [9667]
   },
   {
     "name": "Maarkedal",
     "link": "https://lblod.maarkedal.be/LBLODWeb/Home/Overzicht",
-    "postcode": 9680
+    "postcode": [9680, 9681, 9688]
   },
   {
     "name": "Lierde",
     "link": "https://lblod.lierde.be/LBLODWeb/Home/Overzicht",
-    "postcode": 9570
+    "postcode": [9570, 9571, 9572]
   },
   {
     "name": "Galmaarden",
@@ -117,37 +117,37 @@
   {
     "name": "Erpe-Mere",
     "link": "https://lblod.erpe-mere.be/LBLODWeb/Home/Overzicht",
-    "postcode": 9420
+    "postcode": [9420]
   },
   {
     "name": "Lede",
     "link": "https://lblod.lede.be/LBLODWeb/Home/Overzicht",
-    "postcode": 9340
+    "postcode": [9340]
   },
   {
     "name": "Wetteren",
     "link": "https://lblod.wetteren.be/LBLODWeb/Home/Overzicht",
-    "postcode": 9230
+    "postcode": [9230]
   },
   {
     "name": "Melle",
     "link": "https://lblod.melle.be/LBLODWeb/Home/Overzicht",
-    "postcode": 9090
+    "postcode": [9090]
   },
   {
     "name": "Merelbeke",
     "link": "https://lblod.merelbeke.be/LBLODWeb/Home/Overzicht",
-    "postcode": 9820
+    "postcode": [9820]
   },
   {
     "name": "Laarne",
     "link": "https://lblod.laarne.be/LBLODWeb/Home/Overzicht",
-    "postcode": 9270
+    "postcode": [9270]
   },
   {
     "name": "Zele",
     "link": "https://lblod.zele.be/LBLODWeb/Home/Overzicht/",
-    "postcode": 9240
+    "postcode": [9240]
   },
   {
     "name": "Ingelmunster",
@@ -217,22 +217,22 @@
   {
     "name": "Sint-Niklaas",
     "link": "https://raadpleeg-sint-niklaas.onlinesmartcities.be/",
-    "postcode": 9100
+    "postcode": [9100, 9111, 9112]
   },
   {
     "name": "Aalst",
     "link": "https://raadpleeg-aalst.onlinesmartcities.be/",
-    "postcode": 9300
+    "postcode": [9300, 9308, 9310, 9320]
   },
   {
     "name": "Buggenhout",
     "link": "https://lblod.buggenhout.be/LBLODWeb/Home/Overzicht",
-    "postcode": 9255
+    "postcode": [9255]
   },
   {
     "name": "Zulte",
     "link": "https://zulte-echo.cipalschaubroeck.be/raadpleegomgeving/",
-    "postcode": 9870
+    "postcode": [9870]
   },
   {
     "name": "Waregem",
@@ -242,7 +242,7 @@
   {
     "name": "Deinze",
     "link": "https://deinze-echo.cipalschaubroeck.be/raadpleegomgeving/",
-    "postcode": 9800
+    "postcode": [9800, 9850]
   },
   {
     "name": "Sint-Truiden",
@@ -256,8 +256,8 @@
   },
   {
     "name": "Ninove",
-    "link": "https://lblod.ninove.be/LBLODWeb/Home/Overzicht",
-    "postcode": 9400
+    "link": "https://raadpleeg-ninove.onlinesmartcities.be/",
+    "postcode": [9400, 9401, 9402, 9403, 9404, 9406]
   },
   {
     "name": "Aalter",
@@ -312,7 +312,7 @@
   {
     "name": "Assenede",
     "link": "https://lblod.assenede.be/LBLODweb/Home/Overzicht",
-    "postcode": 9960
+    "postcode": [9960, 9961, 9968]
   },
   {
     "name": "Avelgem",
@@ -323,5 +323,145 @@
     "name": "Zedelgem",
     "link": "https://www.zedelgem.be/lokaal-bestuur-zedelgem",
     "postcode": 8210
+  },
+  {
+    "name": "Berlare",
+    "link": "https://lblod.berlare.be/LBLODWeb/Home/Overzicht",
+    "postcode": [9290]
+  },
+  {
+    "name": "Beveren",
+    "link": "https://raadpleeg-beveren.onlinesmartcities.be/",
+    "postcode": [9120, 9130]
+  },
+  {
+    "name": "De Pinte",
+    "link": "https://de-pinte-echo.cipalschaubroeck.be/raadpleegomgeving/",
+    "postcode": [9840]
+  },
+  {
+    "name": "Denderleeuw",
+    "link": "https://lblod.denderleeuw.be/LBLODWeb/Home/Overzicht",
+    "postcode": [9470, 9472, 9473]
+  },
+  {
+    "name": "Dendermonde",
+    "link": "https://lblod.dendermonde.be/LBLODWeb/Home/Overzicht",
+    "postcode": [9200]
+  },
+  {
+    "name": "Eeklo",
+    "link": "https://www.eeklo.be/gemeenteraad",
+    "postcode": [9900]
+  },
+  {
+    "name": "Evergem",
+    "link": "https://lblod.evergem.be/LBLODWeb/Home/Overzicht",
+    "postcode": [9940]
+  },
+  {
+    "name": "Gavere",
+    "link": "https://gavere-echo.cipalschaubroeck.be/raadpleegomgeving/",
+    "postcode": [9890]
+  },
+  {
+    "name": "Haaltert",
+    "link": "https://haaltert-echo.cipalschaubroeck.be/raadpleegomgeving/",
+    "postcode": [9450, 9451]
+  },
+  {
+    "name": "Hamme",
+    "link": "https://hamme-echo.cipalschaubroeck.be/raadpleegomgeving/",
+    "postcode": [9220]
+  },
+  {
+    "name": "Kaprijke",
+    "link": "https://lblod.kaprijke.be/LBLODWeb/Home/Overzicht",
+    "postcode": [9970, 9971]
+  },
+  {
+    "name": "Kruibeke",
+    "link": "https://lblod.kruibeke.be/LBLODWeb/Home/Overzicht",
+    "postcode": [9150]
+  },
+  {
+    "name": "Lebbeke",
+    "link": "https://lblod.lebbeke.be/LBLODWeb/Home/Overzicht",
+    "postcode": [9280]
+  },
+  {
+    "name": "Lievegem",
+    "link": "https://lievegem-echo.cipalschaubroeck.be/raadpleegomgeving/",
+    "postcode": [9920, 9921, 9930, 9931, 9932, 9950]
+  },
+  {
+    "name": "Lochristi",
+    "link": "https://lblod.lochristi.be/LBLODWeb/Home/Overzicht",
+    "postcode": [9080]
+  },
+  {
+    "name": "Lokeren",
+    "link": "https://raadpleeg-lokeren.onlinesmartcities.be/",
+    "postcode": [9160]
+  },
+  {
+    "name": "Maldegem",
+    "link": "https://maldegem.meetingburger.net",
+    "postcode": [9990, 9991, 9992]
+  },
+  {
+    "name": "Moerbeke",
+    "link": "https://moerbeke-echo.cipalschaubroeck.be/raadpleegomgeving/",
+    "postcode": [9180]
+  },
+  {
+    "name": "Nazareth",
+    "link": "https://nazareth-echo.cipalschaubroeck.be/raadpleegomgeving/",
+    "postcode": [9810]
+  },
+  {
+    "name": "Sint-Gillis-Waas",
+    "link": "https://lblod.sint-gillis-waas.be/LBLODWeb/Home/Overzicht",
+    "postcode": [9170]
+  },
+  {
+    "name": "Sint-Laureins",
+    "link": "https://sint-laureins-echo.cipalschaubroeck.be/raadpleegomgeving/",
+    "postcode": [9980, 9981, 9982, 9988]
+  },
+  {
+    "name": "Sint-Martens-Latem",
+    "link": "https://sint-martens-latem-echo.cipalschaubroeck.be/raadpleegomgeving/",
+    "postcode": [9830, 9831]
+  },
+  {
+    "name": "Stekene",
+    "link": "https://lblod.stekene.be/LBLODWeb/Home/Overzicht",
+    "postcode": [9190]
+  },
+  {
+    "name": "Temse",
+    "link": "https://lblod.temse.be/LBLODWeb/Home/Overzicht/",
+    "postcode": [9140]
+  },
+  {
+    "name": "Waasmunster",
+    "link": "https://waasmunster-echo.cipalschaubroeck.be/raadpleegomgeving/",
+    "postcode": [9250]
+  },
+  {
+    "name": "Wachtebeke",
+    "link": "https://wachtebeke-echo.cipalschaubroeck.be/raadpleegomgeving/",
+    "postcode": [9185]
+  },
+  {
+    "name": "Wichelen",
+    "link": "https://lblod.wichelen.be/LBLODWeb/Home/Overzicht",
+    "postcode": [9260]
+  },
+  {
+    "name": "Zelzate",
+    "link": "https://lblod.zelzate.be/LBLODweb/Home/Overzicht",
+    "postcode": [9060]
   }
 ]
