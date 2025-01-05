@@ -1,21 +1,9 @@
+import { AanwezigheidCommissie } from './aanwezigheid-commissie.type';
+
 export type VolksVertegenwoordigerF = Readonly<{
   id: number;
   'aanwezigheden-huidige-legislatuur': {
-    'commissie-aanw': {
-      commissie: {
-        afkorting: string;
-        datumvan: string;
-        id: number;
-        link: {
-          href: string;
-          rel: string;
-        }[];
-        titel: string;
-      };
-      'plaatsvervangend-lid-aanwezigheid': {
-        afwezig: number;
-      };
-    }[];
+    'commissie-aanw': AanwezigheidCommissie[];
     'plenaire-aanw': {
       verontschuldigd: number;
       afwezig: number;

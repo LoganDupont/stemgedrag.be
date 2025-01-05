@@ -1,0 +1,25 @@
+<mat-card>
+  <mat-card-header class="commission-card-header">
+    <mat-card-title
+      >{{ commission().titel }} ({{commission().afkorting}})</mat-card-title
+    >
+  </mat-card-header>
+  <mat-card-content>
+    <div class="presence">
+      <div>Aanwezigheid: <b>{{ presence() | percent : '1.0-2' }}</b></div>
+      <div class="container">
+        @if (presencePermanentMember()) {
+        <sg-presence-amount
+          name="Vast lid"
+          [presenceAmount]="presencePermanentMember()"
+        ></sg-presence-amount>
+        } @if (presenceSubstituteMember()) {
+        <sg-presence-amount
+          name="Plaatsvervangend lid"
+          [presenceAmount]="presenceSubstituteMember()"
+        ></sg-presence-amount>
+        }
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

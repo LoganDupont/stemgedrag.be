@@ -1,0 +1,17 @@
+@if (isLoadingCommissionsPresence()) {
+<mat-progress-bar mode="indeterminate"></mat-progress-bar>
+} @else {
+<h1>Commissies</h1>
+<div class="container">
+  @for (commissionPresence of commissionsPresence(); track $index) {
+  <sg-commission-presence
+    [commissionPresence]="commissionPresence"
+  ></sg-commission-presence>
+  } @empty {
+  <p>
+    Er zijn geen commissies gevonden waarbij deze volksvertegenwoordiger
+    betrokken is.
+  </p>
+  }
+</div>
+}

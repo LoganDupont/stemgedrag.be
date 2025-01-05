@@ -1,0 +1,16 @@
+.presence {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.commission-card-header {
+  padding: 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+}

@@ -23,8 +23,8 @@ export class FacadeService {
     return this.volksVertegenwoordigerService.getActiveFpMembers();
   }
 
-  public getDetailsFpMember(id: string): Observable<VolksVertegenwoordigerF> {
-    return this.volksVertegenwoordigerService.getDetailsFpMember(id);
+  public getFpmDetails(id: string): Observable<VolksVertegenwoordigerF> {
+    return this.volksVertegenwoordigerService.getFpmDetails(id);
   }
 
   public getVotesByFpMember(): Observable<any> {
