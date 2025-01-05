@@ -2,9 +2,8 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { CommonModule } from '@angular/common';
 import { Component, computed, inject, input } from '@angular/core';
 import { rxResource } from '@angular/core/rxjs-interop';
-import { MatCardModule } from '@angular/material/card';
-import { MatIconModule } from '@angular/material/icon';
-import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { map, Observable, shareReplay } from 'rxjs';
@@ -16,10 +15,9 @@ import { FacadeService } from '../../facade.service';
   imports: [
     CommonModule,
     RouterModule,
-    MatCardModule,
-    MatIconModule,
-    MatProgressBarModule,
     MatSidenavModule,
+    MatDividerModule,
+    MatListModule,
   ],
   templateUrl: './fpm-detail.smart-component.html',
   styleUrls: ['./fpm-detail.smart-component.scss'],
@@ -58,8 +56,7 @@ export class FpmDetailSmartComponent {
     request: () => ({
       fpmId: this.fpmId(),
     }),
-    loader: ({ request }) =>
-      this.facadeService.getDetailsFpMember(request.fpmId),
+    loader: ({ request }) => this.facadeService.getFpmDetails(request.fpmId),
   });
 
   protected fpMember = computed(() => this.fpmResource.value());
@@ -94,8 +91,4 @@ export class FpmDetailSmartComponent {
       map((result) => result.matches),
       shareReplay()
     );
-
-  navigateToParliamentaryInitiativeDetailPage(vote: any) {
-    window.open(vote.link, '_blank', 'noreferrer');
-  }
 }

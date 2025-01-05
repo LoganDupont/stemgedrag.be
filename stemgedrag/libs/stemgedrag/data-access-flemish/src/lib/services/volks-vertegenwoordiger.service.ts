@@ -25,7 +25,7 @@ export class VolksVertegenwoordigerService {
       .pipe(map((data) => data.items));
   }
 
-  public getDetailsFpMember(id: string): Observable<VolksVertegenwoordigerF> {
+  public getFpmDetails(id: string): Observable<VolksVertegenwoordigerF> {
     return this.httpClient.get<VolksVertegenwoordigerF>(
       `${this.apiUrl}/vv/${id}`,
       {
