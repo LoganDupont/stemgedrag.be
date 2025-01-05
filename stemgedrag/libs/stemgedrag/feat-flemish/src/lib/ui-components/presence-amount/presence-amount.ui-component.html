@@ -1,0 +1,21 @@
+<div class="presence-amount-container">
+  <span>{{name()}}:</span>
+  <div class="presence-options">
+    <div class="presence-option">
+      <span class="dot green"></span>
+      <div>Aanwezig: <b>{{present()}}</b></div>
+    </div>
+    <div class="presence-option">
+      <span class="dot orange"></span>
+      <div>Veronschuldigd: <b>{{apologized()}}</b></div>
+    </div>
+    <div class="presence-option">
+      <span class="dot red"></span>
+      <div>Afwezig: <b>{{absent()}}</b></div>
+    </div>
+    <div class="presence-option">
+      <span class="dot grey"></span>
+      <div>Totaal: <b>{{total()}}</b></div>
+    </div>
+  </div>
+</div>

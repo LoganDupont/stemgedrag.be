@@ -5,6 +5,7 @@ import {
   provideRouter,
   withComponentInputBinding,
   withEnabledBlockingInitialNavigation,
+  withRouterConfig,
 } from '@angular/router';
 import { appRoutes } from './app.routes';
 
@@ -14,7 +15,8 @@ export const appConfig: ApplicationConfig = {
     provideRouter(
       appRoutes,
       withEnabledBlockingInitialNavigation(),
-      withComponentInputBinding()
+      withComponentInputBinding(),
+      withRouterConfig({ paramsInheritanceStrategy: 'always' })
     ),
     provideAnimations(),
   ],

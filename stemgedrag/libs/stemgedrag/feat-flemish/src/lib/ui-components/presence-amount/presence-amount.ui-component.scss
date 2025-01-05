@@ -1,0 +1,36 @@
+.presence-options,
+.presence-amount-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.presence-option {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+.dot {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  display: inline-block;
+
+  &.green {
+    background-color: #399f6b;
+  }
+
+  &.red {
+    background-color: #de350a;
+  }
+
+  &.orange {
+    background-color: #feaa00;
+  }
+
+  &.grey {
+    background-color: #bbb;
+  }
+}
