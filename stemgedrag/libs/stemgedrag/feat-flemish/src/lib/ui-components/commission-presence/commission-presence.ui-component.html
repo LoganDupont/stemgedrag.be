@@ -8,7 +8,12 @@
     <div class="presence">
       <div>Aanwezigheid: <b>{{ presence() | percent : '1.0-2' }}</b></div>
       <div class="container">
-        @if (presencePermanentMember()) {
+        @if (presenceChairman()) {
+        <sg-presence-amount
+          name="Voorzitter"
+          [presenceAmount]="presenceChairman()"
+        ></sg-presence-amount>
+        } @if (presencePermanentMember()) {
         <sg-presence-amount
           name="Vast lid"
           [presenceAmount]="presencePermanentMember()"
@@ -17,6 +22,16 @@
         <sg-presence-amount
           name="Plaatsvervangend lid"
           [presenceAmount]="presenceSubstituteMember()"
+        ></sg-presence-amount>
+        } @if (presenceAddedMember()) {
+        <sg-presence-amount
+          name="Toegevoegd lid"
+          [presenceAmount]="presenceAddedMember()"
+        ></sg-presence-amount>
+        } @if (presenceNotMember()) {
+        <sg-presence-amount
+          name="Niet lid"
+          [presenceAmount]="presenceNotMember()"
         ></sg-presence-amount>
         }
       </div>
