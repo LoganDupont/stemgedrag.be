@@ -1,4 +1,3 @@
-
 import { Component, computed, inject, input } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
@@ -19,7 +18,7 @@ export class VoteRecordOverviewSmartComponent {
   protected fpmId = input.required<string>({ alias: 'id' });
 
   private votesByFpMemberResource = rxResource({
-    loader: () => this.facadeService.getVotesByFpMember(),
+    stream: () => this.facadeService.getVotesByFpMember(),
   });
 
   private votesByFpMember = computed(

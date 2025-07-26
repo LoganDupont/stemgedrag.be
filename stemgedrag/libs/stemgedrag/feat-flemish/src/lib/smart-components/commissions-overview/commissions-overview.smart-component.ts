@@ -1,4 +1,3 @@
-
 import { Component, computed, inject, input } from '@angular/core';
 import { rxResource } from '@angular/core/rxjs-interop';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
@@ -18,11 +17,11 @@ export class CommissionsOverviewSmartComponent {
   protected fpmId = input.required<string>({ alias: 'id' });
 
   private fpmResource = rxResource({
-    request: () => ({
+    params: () => ({
       fpmId: this.fpmId(),
     }),
-    loader: ({ request }) => {
-      return this.facadeService.getFpmDetails(request.fpmId);
+    stream: ({ params }) => {
+      return this.facadeService.getFpmDetails(params.fpmId);
     },
   });
 

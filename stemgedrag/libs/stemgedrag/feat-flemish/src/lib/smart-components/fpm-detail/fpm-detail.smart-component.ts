@@ -53,10 +53,10 @@ export class FpmDetailSmartComponent {
   );
 
   private fpmResource = rxResource({
-    request: () => ({
+    params: () => ({
       fpmId: this.fpmId(),
     }),
-    loader: ({ request }) => this.facadeService.getFpmDetails(request.fpmId),
+    stream: ({ params }) => this.facadeService.getFpmDetails(params.fpmId),
   });
 
   protected fpMember = computed(() => this.fpmResource.value());

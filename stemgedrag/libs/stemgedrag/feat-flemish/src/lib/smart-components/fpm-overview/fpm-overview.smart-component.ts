@@ -23,8 +23,8 @@ import { FacadeService } from '../../facade.service';
     MatInputModule,
     FormsModule,
     MatButtonModule,
-    MatIconModule
-],
+    MatIconModule,
+  ],
   templateUrl: './fpm-overview.smart-component.html',
   styleUrls: ['./fpm-overview.smart-component.scss'],
 })
@@ -34,7 +34,7 @@ export class FpmOverviewSmartComponent {
   protected searchValue = signal('');
 
   private activeFpMembersResource = rxResource({
-    loader: () => this.facadeService.getActiveFpMembers(),
+    stream: () => this.facadeService.getActiveFpMembers(),
   });
   protected activeFpMembers = computed(
     () => this.activeFpMembersResource.value() || []
