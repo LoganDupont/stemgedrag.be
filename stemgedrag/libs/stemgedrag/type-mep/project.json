@@ -3,8 +3,8 @@
   "$schema": "../../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "libs/stemgedrag/type-mep/src",
   "prefix": "sg",
-  "tags": ["scope:stemgedrag", "type:type"],
   "projectType": "library",
+  "tags": ["scope:stemgedrag", "type:type"],
   "targets": {
     "test": {
       "executor": "@nx/jest:jest",

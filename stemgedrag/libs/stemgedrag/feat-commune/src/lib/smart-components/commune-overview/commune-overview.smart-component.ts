@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, computed, inject, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
@@ -12,14 +12,13 @@ import { FacadeService } from '../../facade.service';
 @Component({
     selector: 'sg-commune-overview',
     imports: [
-        CommonModule,
-        MatFormFieldModule,
-        MatInputModule,
-        FormsModule,
-        MatButtonModule,
-        MatIconModule,
-        MatListModule,
-    ],
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    MatButtonModule,
+    MatIconModule,
+    MatListModule
+],
     templateUrl: './commune-overview.smart-component.html',
     styleUrls: ['./commune-overview.smart-component.scss']
 })

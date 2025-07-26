@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, computed, inject, input } from '@angular/core';
 import { rxResource } from '@angular/core/rxjs-interop';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
@@ -8,7 +8,7 @@ import { CommissionPresenceUiComponent } from '../../ui-components/commission-pr
 
 @Component({
   selector: 'sg-commissions-overview',
-  imports: [CommonModule, MatProgressBarModule, CommissionPresenceUiComponent],
+  imports: [MatProgressBarModule, CommissionPresenceUiComponent],
   templateUrl: './commissions-overview.smart-component.html',
   styleUrl: './commissions-overview.smart-component.scss',
 })

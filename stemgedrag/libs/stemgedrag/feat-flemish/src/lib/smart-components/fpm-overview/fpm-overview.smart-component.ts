@@ -1,4 +1,4 @@
-import { CommonModule, NgOptimizedImage } from '@angular/common';
+import { NgOptimizedImage } from '@angular/common';
 import { Component, computed, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
@@ -15,7 +15,6 @@ import { FacadeService } from '../../facade.service';
 @Component({
   selector: 'sg-fpm-overview',
   imports: [
-    CommonModule,
     RouterModule,
     MatCardModule,
     NgOptimizedImage,
@@ -24,8 +23,8 @@ import { FacadeService } from '../../facade.service';
     MatInputModule,
     FormsModule,
     MatButtonModule,
-    MatIconModule,
-  ],
+    MatIconModule
+],
   templateUrl: './fpm-overview.smart-component.html',
   styleUrls: ['./fpm-overview.smart-component.scss'],
 })

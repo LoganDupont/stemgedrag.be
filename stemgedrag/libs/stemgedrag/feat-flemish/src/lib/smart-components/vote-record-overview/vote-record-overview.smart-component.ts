@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, computed, inject, input } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
@@ -9,7 +9,7 @@ import { FacadeService } from '../../facade.service';
 
 @Component({
   selector: 'sg-vote-record-overview',
-  imports: [CommonModule, MatCardModule, MatIconModule, MatProgressBarModule],
+  imports: [MatCardModule, MatIconModule, MatProgressBarModule],
   templateUrl: './vote-record-overview.smart-component.html',
   styleUrl: './vote-record-overview.smart-component.scss',
 })

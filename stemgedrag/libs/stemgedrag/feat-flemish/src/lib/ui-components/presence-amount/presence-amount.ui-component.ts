@@ -1,10 +1,10 @@
-import { CommonModule } from '@angular/common';
+
 import { Component, computed, input } from '@angular/core';
 import { AanwezigheidCommissieAantal } from '@stemgedrag/stemgedrag/type-volks-vertegenwoordiger';
 
 @Component({
   selector: 'sg-presence-amount',
-  imports: [CommonModule],
+  imports: [],
   templateUrl: './presence-amount.ui-component.html',
   styleUrl: './presence-amount.ui-component.scss',
 })
